@@ -1,0 +1,72 @@
+
+
+{
+  "fs-template": {
+    "client": {
+      "src": {
+        "assets": {
+          "img": {
+            "logo-new.png": null
+          },
+          "scss": {
+            "_main.scss": null,
+            "_variables.scss": null,
+            "style.scss": null
+          }
+        },
+        "components": {},
+        "models": {
+          "Account.ts": null
+        },
+        "pages": {},
+        "services": {
+          "AccountService.ts": null,
+          "AuthService.ts": null,
+          "AxiosService.ts": null
+        },
+        "utils": {
+          "Logger.ts": null
+        },
+        "App.vue": null,
+        "AppState.ts": null,
+        "env.ts": null,
+        "main.ts": null,
+        "router.ts": null,
+        "placeholder.ts": null
+      },
+      ".vscode": {
+        "client-snippets.code-snippets": null,
+        "launch.json": null,
+        "settings.json": null
+      },
+      "@types": {
+        "shims-vue.d.ts": null
+      },
+      "public": {
+        ".nojekyll": null,
+        "img": {
+          ".gitkeep": null,
+          "logo-new.png": null
+        }
+      },
+      ".gitignore": null,
+      "eslint.config.ts": null,
+      "index.html": null,
+      "package-lock.json": null,
+      "package.json": null,
+      "Readme.md": null,
+      "tsconfig.json": null,
+      "vite.config.ts": null
+    },
+    "server": {},
+    "docs": {
+      "tree.json": null
+    },
+    "scripts": {},
+    "fs-template.code-workspace": null,
+    "fs-template.sln": null,
+    ".gitignore": null,
+    "README.md": null,
+    "LICENSE.md": null
+  }
+}
