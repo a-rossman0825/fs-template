@@ -24,8 +24,12 @@
           "AuthService.ts": null,
           "AxiosService.ts": null
         },
+        "stores": {
+          "AuthStore.ts": null
+        },
         "utils": {
-          "Logger.ts": null
+          "Logger.ts": null,
+          "registerGlobalComponents.ts": null
         },
         "App.vue": null,
         "AppState.ts": null,

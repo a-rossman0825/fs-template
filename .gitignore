@@ -1,0 +1,107 @@
+# ---------------------------------------------------------
+# Global / meta ignores
+# ---------------------------------------------------------
+
+# Node / dependency directories (just in case)
+node_modules/
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Environment variables (if you have root-level .env)
+.env
+.env.*
+
+# OS junk
+.DS_Store
+Thumbs.db
+
+# Editor cruft
+.vscode/
+.idea/
+*.code-workspace
+
+# Build outputs (if any scripts build to root)
+dist/
+build/
+out/
+
+# TypeScript caches
+*.tsbuildinfo
+
+# Coverage and testing
+coverage/
+.nyc_output/
+
+# Temporary files
+*.tmp
+*.swp
+
+# ---------------------------------------------------------
+# Folder-specific overrides
+# (client/server have their own .gitignore, so this just
+# ensures root doesn’t accidentally track their outputs)
+# ---------------------------------------------------------
+client/node_modules/
+client/dist/
+server/node_modules/
+server/dist/
+scripts/node_modules/
+scripts/dist/
+
+# Docs site builds (if you generate HTML or PDFs)
+docs/.vitepress/dist/
+docs/build/
+docs/node_modules/
+
+
+# Build results
+[Dd]ebug/
+[Dd]ebugPublic/
+[Rr]elease/
+[Rr]eleases/
+x64/
+x86/
+[Aa][Rr][Mm]/
+[Aa][Rr][Mm]64/
+bld/
+[Bb]in/
+[Oo]bj/
+[Ll]og/
+[Ll]ogs/
+
+# Files built by Visual Studio
+*_i.c
+*_p.c
+*_h.h
+*.ilk
+*.meta
+*.obj
+*.iobj
+*.pch
+*.pdb
+*.ipdb
+*.pgc
+*.pgd
+*.rsp
+*.sbr
+*.tlb
+*.tli
+*.tlh
+*.tmp
+*.tmp_proj
+*_wpftmp.csproj
+*.log
+*.vspscc
+*.vssscc
+.builds
+*.pidb
+*.svclog
+*.scc
+
+# Chutzpah Test files
+_Chutzpah*

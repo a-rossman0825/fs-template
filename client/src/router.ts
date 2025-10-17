@@ -8,7 +8,7 @@ function loadPage(page: any) {
 const routes = [
   {
     path: '/',
-    name: 'home',
+    name: 'Home',
     component: loadPage('HomePage')
   }
 ];
@@ -19,5 +19,3 @@ export const router = createRouter({
   history: createWebHashHistory(),
   routes
 })
-
-//NOTE to self: finish all necessary file set up, then finish Pinia setup/stores
