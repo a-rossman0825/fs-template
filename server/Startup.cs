@@ -43,11 +43,12 @@ public class Startup
     services.AddSingleton<Auth0Provider>();
 
     //Register Repositories Here
-    //services.AddScoped<AccountsRepository>();
-
+    services.AddScoped<AccountsRepository>();
+    services.AddScoped<ExamplesRepository>();
 
     //Register Services Here
-    //services.AddScoped<AccountService>();
+    services.AddScoped<AccountService>();
+    services.AddScoped<ExampleService>();
   }
 
   private void ConfigureCors(IServiceCollection services)

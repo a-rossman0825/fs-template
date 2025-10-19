@@ -1,5 +1,5 @@
 #!/bin/bash
-# Usage: ./migrate.sh MigrationName
+# Usage: From project root folder:  ./scripts/migrate.sh MigrationName
 
 if [ -z "$1"]; then
   echo "please provide a migration name."

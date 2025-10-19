@@ -7,6 +7,7 @@ global using System.Threading.Tasks;
 global using Microsoft.AspNetCore.Authorization;
 global using Microsoft.AspNetCore.Mvc;
 global using CodeWorks.Utils;
+global using Microsoft.EntityFrameworkCore;
 
 // APPLICATION SPECIFIC
 global using fs_template.Repositories;

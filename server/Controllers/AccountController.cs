@@ -1,3 +1,5 @@
+using fs_template.DTOs;
+
 namespace fs_template.Controllers;
 
 
@@ -16,7 +18,7 @@ public class AccountController : ControllerBase
   }
 
   [HttpGet]
-  public async Task<ActionResult<Account>> Get()
+  public async Task<ActionResult<AccountDTO>> Get()
   {
     try
     {

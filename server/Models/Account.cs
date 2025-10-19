@@ -8,8 +8,7 @@ namespace fs_template.Models
     [Key]
     [Required]
     public required string Id { get; set; }
-    [Required]
-    public required string Name { get; set; }
+    public string? Name { get; set; }
     [Required]
     public required string Email { get; set; }
 

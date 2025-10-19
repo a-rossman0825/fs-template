@@ -1,5 +1,7 @@
 
 
+using fs_template.DTOs;
+
 namespace fs_template.Services
 {
   public class AccountService
@@ -21,20 +23,21 @@ namespace fs_template.Services
       return account;
     }
 
-    internal Account GetOrCreateAccount(Account userInfo)
+    internal AccountDTO GetOrCreateAccount(Account userInfo)
     {
       Account? account = _repo.GetById(userInfo.Id);
       if (account == null)
       {
-        return _repo.Create(userInfo);
+        Account newAccount = _repo.Create(userInfo);
+        return AccountDTO.MapDto(newAccount);
       }
-      return account;
+      return AccountDTO.MapDto(account);
     }
 
-    internal Account UpdateAccount(Account account)
+    internal AccountDTO UpdateAccount(Account account)
     {
-      _repo.Update(account);
-      return account;
+      Account updated = _repo.Update(account);
+      return AccountDTO.MapDto(updated);
     }
   }
 }
