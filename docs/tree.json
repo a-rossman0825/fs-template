@@ -14,11 +14,15 @@
             "style.scss": null
           }
         },
-        "components": {},
+        "components": {
+          "Login.vue": null
+        },
         "models": {
           "Account.ts": null
         },
-        "pages": {},
+        "pages": {
+          "HomePage.vue": null
+        },
         "services": {
           "AccountService.ts": null,
           "AuthService.ts": null,
@@ -35,8 +39,7 @@
         "AppState.ts": null,
         "env.ts": null,
         "main.ts": null,
-        "router.ts": null,
-        "placeholder.ts": null
+        "router.ts": null
       },
       ".vscode": {
         "client-snippets.code-snippets": null,
@@ -62,7 +65,9 @@
       "tsconfig.json": null,
       "vite.config.ts": null
     },
-    "server": {},
+    "server": {
+      ".gitignore": null
+    },
     "docs": {
       "tree.json": null
     },
@@ -72,5 +77,41 @@
     ".gitignore": null,
     "README.md": null,
     "LICENSE.md": null
+  },
+
+  "server": {
+    ".vscode": {
+      "server-snippets.code-snippets": null,
+      "launch.json": null,
+      "tasks.json": null
+    },
+    "Controllers": {
+      "AccountController.cs": null,
+      "ValuesController.cs": null
+    },
+    "DTOs": {},
+    "Migrations": {},
+    "Models": {
+      "Account.cs": null
+    },
+    "Properties": {
+      "launchSettings.json": null
+    },
+    "Repositories": {
+      "AccountsRepository.cs": null
+    },
+    "Services": {
+      "AccountService.cs": null
+    },
+    "wwwroot": {
+      "index.html": null
+    },
+    ".gitignore": null,
+    "appsettings.Development.json": null,
+    "appsettings.json": null,
+    "Globals.cs": null,
+    "Program.cs": null,
+    "Readme.md": null,
+    "Startup.cs": null
   }
 }
