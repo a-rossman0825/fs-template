@@ -1,5 +1,3 @@
-using Microsoft.EntityFrameworkCore;
-using fs_template.Models;
 
 namespace fs_template.Data
 {

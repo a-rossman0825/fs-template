@@ -1,4 +1,3 @@
-using fs_template.DTOs;
 
 namespace fs_template.Controllers;
 

@@ -1,7 +1,4 @@
 
-
-using fs_template.DTOs;
-
 namespace fs_template.Services
 {
   public class AccountService
