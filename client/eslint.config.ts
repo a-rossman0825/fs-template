@@ -1,4 +1,5 @@
 import globals from 'globals';
+//@ts-ignore
 import { defineConfigWithVueTs, vueTsConfigs } from '@vue/eslint-config-typescript';
 import pluginVue from 'eslint-plugin-vue';
 
