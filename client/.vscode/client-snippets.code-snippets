@@ -1,0 +1,13 @@
+
+{
+  "Try Catch - Client": {
+    "prefix": "tryC",
+    "body": [
+      "try { ",
+      "  $1",
+      "} catch (err: any) {",
+      "  logger.error('${2:ErrorMessage}', err);",
+      "}"
+    ]
+  }
+}

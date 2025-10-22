@@ -1,6 +1,4 @@
 <script lang="ts" setup>
-import Login from '@/components/Login.vue';
-
 
 </script>
 
@@ -10,7 +8,7 @@ import Login from '@/components/Login.vue';
     <div class="row">
       <div class="col-6">
         <h1>Hello World!</h1>
-        <Login />
+
       </div>
     </div>
   </section>

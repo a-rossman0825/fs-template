@@ -1,10 +1,10 @@
 import { AUTH_EVENTS, Identity, initialize } from "@bcwdev/auth0provider-client";
-import { VITE_AUTH0_AUDIENCE as audience, VITE_AUTH0_CLIENT_ID as clientId, VITE_AUTH0_DOMAIN as domain } from '../env';
-import { AppState } from "@/AppState";
+import { audience, clientId, domain } from '../env';
 import { api } from "./AxiosService";
 import { accountService } from "./AccountService";
+import { useAuthStore } from "@/stores/AuthStore";
 
-
+const authStore = useAuthStore();
 
 export const AuthService = initialize({
   domain,
@@ -18,7 +18,7 @@ export const AuthService = initialize({
 AuthService.on(AUTH_EVENTS.AUTHENTICATED, async ()=> {
   api.defaults.headers.authorization = AuthService.bearer
   api.interceptors.request.use(refreshAuthToken);
-  AppState.identity = AuthService.identity as Identity;
+  authStore.identity = AuthService.identity as Identity;
   await accountService.getAccount();
 })
 
