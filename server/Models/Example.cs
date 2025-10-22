@@ -7,8 +7,12 @@ namespace fs_template.Models
     [Key]
     [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
     public int Id { get; set; }
+
     [Required]
     public required string ExampleText { get; set; }
+
+
+    public string? CreatorId { get; set; }
   }
 }
 

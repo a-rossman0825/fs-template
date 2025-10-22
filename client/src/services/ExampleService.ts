@@ -8,14 +8,21 @@ const exampleStore = useExampleStore();
 class ExampleService {
   
   async getAllExamples() {
-    try { 
+
       const res = await api.get('/example');
       logger.log('Got Examples!', res.data);
       exampleStore.examples = res.data.map((e: Example) => new Example(e));
       
-    } catch (err: any) {
-      logger.error('ErrorMessage', err);
-    }
+  }
+
+  async createExample(data: any){
+      const res = await api.post('/example', data);
+      const example = new Example(res.data);
+      exampleStore.examples.push(example);
+  } 
+
+  async deleteExample(exampleId: number){
+    const res = await api.delete(`/example/${exampleId}`)
   }
 }
 

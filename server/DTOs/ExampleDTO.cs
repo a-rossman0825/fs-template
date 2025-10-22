@@ -5,6 +5,8 @@ public class ExampleDTO
   public int Id { get; set; }
   public string? ExampleText { get; set; }
 
+  public string? creatorId { get; set; }
+
   public static ExampleDTO MapDto(Example example)
   {
     return new ExampleDTO

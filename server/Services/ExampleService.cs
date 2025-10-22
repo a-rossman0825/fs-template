@@ -8,6 +8,7 @@ namespace fs_template.Services
     public ExampleService(ExamplesRepository repo)
     {
       _repo = repo;
+
     }
 
     private Example? GetExampleById(int id)
@@ -27,16 +28,29 @@ namespace fs_template.Services
       return dtos;
     }
 
-    internal async Task<ExampleDTO> CreateExample(Example exampleData)
+    internal async Task<ExampleDTO> CreateExample(Example exampleData, string userId)
     {
+      if (userId != null)
+      {
+        exampleData.CreatorId = userId;
+      }
       Example newExample = await _repo.Create(exampleData);
       return ExampleDTO.MapDto(newExample);
     }
 
-    internal async Task<string> DeleteExample(int id)
+    internal async Task<string> DeleteExample(int id, string userId)
     {
+      Example? example = _repo.GetById(id);
+      if (example != null)
+      {
+        if (example.CreatorId != userId)
+        {
+          return "You Cannot Delete an Example that does not Belong to You!";
+        }
       await _repo.Delete(id);
       return $"Example with id: {id} has been deleted";
+      }
+      return $"Example with Id: {id} Does not exist!";
     }
   }
 }

@@ -1,19 +1,10 @@
 <script lang="ts" setup>
-import { Example } from '@/models/Example.ts';
-import { exampleService } from '@/services/ExampleService.ts';
-import { useExampleStore } from '@/stores/ExampleStore.ts';
-import { logger } from '@/utils/Logger.ts';
 
-const exampleStore = useExampleStore();
+import CreateCard from './CreateCard.vue';
+import DeleteCard from './DeleteCard.vue';
+import GetCard from './GetCard.vue';
 
-let examples = exampleStore.examples;
-async function getExample() {
-  try { 
-    await exampleService.getAllExamples();
-  } catch (err: any) {
-    logger.error('ErrorMessage', err);
-  }
-}
+
 
 </script>
 
@@ -24,23 +15,21 @@ async function getExample() {
       <h1>Test Your API Connection</h1>
       <h2>Create an example </h2>
       <div class="row">
-        <!-- SECTION CREATE EXAMPLE -->
+        <!-- SECTION GET EXAMPLE -->
         <div class="col-4">
-          
+          <GetCard />
         </div>
         <!-- !SECTION -->
-         <!-- SECTION GET EXAMPLES -->
+         <!-- SECTION CREATE EXAMPLE -->
         <div class="col-4">
-          <button @click="getExample()">Get Examples</button>
-          <ul>
-            <div v-for="ex in exampleStore.examples" :key="ex.id">{{ ex.exampleText }}</div>
-          </ul>
+          <CreateCard />
         </div>
         <!-- !SECTION -->
          <!-- SECTION DELETE EXAMPLE -->
         <div class="col-4">
-
+          <DeleteCard />
         </div>
+        <!-- !SECTION -->
       </div>
     </div>
   </section>

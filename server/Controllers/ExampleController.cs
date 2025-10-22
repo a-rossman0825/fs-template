@@ -6,11 +6,12 @@ namespace fs_template.Controllers;
 public class ExampleController : ControllerBase
 {
   private readonly ExampleService _service;
+  private readonly Auth0Provider _auth;
 
-  public ExampleController(ExampleService service)
+  public ExampleController(ExampleService service, Auth0Provider auth)
   {
     _service = service;
-
+    _auth = auth;
   }
 
   [HttpGet]
@@ -26,13 +27,14 @@ public class ExampleController : ControllerBase
       return BadRequest(exception.Message);
     }
   }
-
+  
   [HttpPost]
   public async Task<ActionResult<ExampleDTO>> CreateExample([FromBody] Example exampleData)
   {
     try
     {
-      ExampleDTO example = await _service.CreateExample(exampleData);
+      Account userInfo = await _auth.GetUserInfoAsync<Account>(HttpContext);
+      ExampleDTO example = await _service.CreateExample(exampleData, userInfo.Id);
       return Ok(example);
     }
     catch (Exception exception)
@@ -41,12 +43,14 @@ public class ExampleController : ControllerBase
     }
   }
 
+  [Authorize]
   [HttpDelete("{exampleId}")]
   public async Task<ActionResult<string>> DeleteExample(int exampleId)
   {
     try
     {
-      string Msg = await _service.DeleteExample(exampleId);
+      Account userInfo = await _auth.GetUserInfoAsync<Account>(HttpContext);
+      string Msg = await _service.DeleteExample(exampleId, userInfo.Id);
       return Ok(Msg);
     }
     catch (Exception exception)
