@@ -1,9 +1,9 @@
 export class Example {
   id: number;
-  exampleString: string;
+  exampleText: string;
 
-  constructor(data: { id: number; exampleString: string }){
+  constructor(data: { id: number; exampleText: string }){
     this.id = data.id;
-    this.exampleString = data.exampleString;
+    this.exampleText = data.exampleText;
   }
 }

@@ -1,12 +1,10 @@
 <script lang="ts" setup>
 import { AuthService } from '@/services/AuthService.ts';
 import { useAuthStore } from '@/stores/AuthStore.ts';
-import { ref } from 'vue';
 
 
 const authStore = useAuthStore();
-const account = ref(authStore.account);
-const identity = ref(authStore.identity);
+
 
 function login() {
   AuthService.loginWithRedirect();
@@ -21,12 +19,12 @@ function logout() {
 
 <template>
   <span>
-    <button class="btn text-green" @click="login" v-if="!identity">
+    <button class="btn text-green" @click="login" v-if="!authStore.identity">
       Login
     </button>
     <div v-else>
-      <div v-if="account?.picture || identity?.picture">
-        <img role="button" :src="account?.picture || identity?.picture" :alt="account?.name || 'account photo'" height="40" class="user-img" @click="logout"/>
+      <div v-if="authStore.account?.picture || authStore.identity?.picture">
+        <img role="button" :src="authStore.account?.picture || authStore.identity?.picture" :alt="authStore.account?.name || 'account photo'" height="40" class="user-img" @click="logout"/>
       </div>
     </div>
   </span>
