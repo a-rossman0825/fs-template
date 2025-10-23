@@ -3,11 +3,10 @@ import { api } from "./AxiosService";
 import { Account } from "@/models/Account";
 import { useAuthStore } from "@/stores/AuthStore";
 
-const authStore = useAuthStore();
-
 class AccountService {
 
   async getAccount() {
+    const authStore = useAuthStore();
     try {
       const res = await api.get('/account');
       authStore.account = new Account(res.data);

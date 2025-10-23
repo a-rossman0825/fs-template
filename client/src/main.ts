@@ -11,11 +11,14 @@ const root = createApp(App);
 const pinia = createPinia();
 
 async function init() {
+      
   await registerGlobalComponents(root);
+
   root
     .use(pinia)
     .use(router)
-    .mount('#app');
+
+  root.mount('#app');
 };
 
 init();

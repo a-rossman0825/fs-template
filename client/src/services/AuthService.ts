@@ -4,7 +4,7 @@ import { api } from "./AxiosService";
 import { accountService } from "./AccountService";
 import { useAuthStore } from "@/stores/AuthStore";
 
-const authStore = useAuthStore();
+
 
 export const AuthService = initialize({
   domain,
@@ -16,6 +16,7 @@ export const AuthService = initialize({
 });
 
 AuthService.on(AUTH_EVENTS.AUTHENTICATED, async ()=> {
+  const authStore = useAuthStore();
   api.defaults.headers.authorization = AuthService.bearer
   api.interceptors.request.use(refreshAuthToken);
   authStore.identity = AuthService.identity as Identity;

@@ -103,12 +103,12 @@ export class Pop {
     return new Promise((resolve) => {
       const dialog = this.createDialog(`
         <div class="dialog-body">
-          <h2>${title}</h2>
+          <h2 class="text-light">${title}</h2>
           <hr/>
           <p>${text}</p>
           <div class="dialog-buttons d-flex gap-3">
-            <button id="cancel-button" class="btn w-100" > ${cancelText} </button>
-            <button id="confirm-button" class="btn btn-primary w-100" > ${confirmText} </button>
+            <button id="cancel-button" class="btn w-100 btn-danger" > ${cancelText} </button>
+            <button id="confirm-button" class="btn btn-info w-100" > ${confirmText} </button>
           </div>
         </div>
       `);

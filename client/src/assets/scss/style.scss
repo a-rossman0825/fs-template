@@ -23,3 +23,63 @@ main {
   justify-content: start;
   align-items: end;
 }
+
+.border-blue {
+  border: 1px solid var(--bs-secondary);
+}
+
+.border-right-blue {
+  border-right: 1px solid var(--bs-secondary);
+}
+
+.border-bottom-blue {
+  border-bottom: 1px solid var(--bs-secondary);
+}
+
+.border-top-blue {
+  border-top: 1px solid var(--bs-secondary);
+}
+
+.border-left-blue {
+  border-left: 1px solid var(--bs-secondary);
+}
+
+.custom-dialog {
+  min-width: 320px;
+  max-width: 90vw;
+  border-radius: 12px;
+  border: none;
+  background: #e0e1e2;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.18);
+  padding: 0;
+  color: var(--bs-light, #fff);
+}
+
+.custom-dialog .dialog-body {
+  padding: 2rem 1.5rem 1rem 1.5rem;
+  text-align: center;
+}
+
+.custom-dialog h2 {
+  font-size: 1.4rem;
+  margin-bottom: 0.5rem;
+  color: var(--bs-primary, #0984e3);
+}
+
+.custom-dialog hr {
+  margin: 0.5rem 0 1rem 0;
+  border-color: var(--bs-primary, #0984e3);
+}
+
+.custom-dialog .dialog-buttons {
+  margin-top: 1.5rem;
+  gap: 1rem;
+}
+
+.custom-dialog .btn {
+  border-radius: 8px;
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+  transition: background 0.2s;
+}
+
