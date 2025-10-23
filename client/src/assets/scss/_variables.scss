@@ -1,15 +1,15 @@
 $body-bg: #fff;
-$body-bg-dark: #1b1f22;
+$body-bg-dark: #0f172a;
 $theme-colors: (
-  "primary": #0e6efd,
+  "primary": #161e2ed7,
   "secondary": #aeb2b6,
   "success": #198754,
-  "info": #0ccaf0,
+  "info": #1557b0,
   "warning": #ffc105,
   "danger": #dc3545,
-  "dark": #212529,
+  "dark": #0f172a,
   "light": #f8f9fa,
-  "body-bg": #fff,
+  "body-bg": #020617,
   // Bootstrap extended colors
   "gray": $gray-500,
   "grey": $gray-500,
@@ -24,5 +24,6 @@ $theme-colors: (
   "teal": $teal,
   "cyan":$cyan,
   // Custom colors
-
+  
 );
+

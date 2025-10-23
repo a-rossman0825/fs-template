@@ -23,6 +23,9 @@ class ExampleService {
 
   async deleteExample(exampleId: number){
     const res = await api.delete(`/example/${exampleId}`)
+    logger.log('Deleted Example', res.data);
+    const i = exampleStore.examples.findIndex((e) => e.id == exampleId);
+    exampleStore.examples.splice(i, 1);
   }
 }
 

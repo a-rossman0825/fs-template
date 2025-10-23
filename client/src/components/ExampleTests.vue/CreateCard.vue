@@ -34,8 +34,13 @@ async function createExample(){
 
 <template>
   <div class="card">
-    <div class="card-body text-center justify-content-center">
-      <h1>Create an Example</h1>
+    <div class="card-header">
+      <div class="row text-center h2 pt-3">
+        <h1><i class="mdi mdi-pencil-outline"></i></h1>
+      </div>
+    </div>
+    <div class="card-body text-start justify-content-center">
+      <p class="h4">Create an Example</p>
       
       <form @submit.prevent="createExample()">
         <div class="form-floating mb-1">
@@ -50,9 +55,12 @@ async function createExample(){
             maxlength="25"
             required
           />
-          <label for="exampleText" class="form-label">Example text...</label>
+          <label for="exampleText" >Example text...</label>
         </div>
-        <button role="submit" class="btn btn-primary">Create Example</button>
+        <div class="d-flex justify-content-center">
+          <button role="submit" class="mt-2 btn btn-primary">Create Example</button>
+        </div>
+        
       </form>
     </div>
   </div>
@@ -60,5 +68,14 @@ async function createExample(){
 
 
 <style lang="scss" scoped>
+  .card {
+    height: 300px;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.411);
 
+    transition: all .4s ease-in-out;
+
+    &:hover {
+      box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.596);
+    }
+  }
 </style>

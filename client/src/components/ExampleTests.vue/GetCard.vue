@@ -22,15 +22,13 @@ let testing = ref(false);
 
 <template>
   <div class="card">
+    <div class="card-header pt-4">
+      <h1 class="mb-3"><i class="mdi mdi-rocket-launch"></i></h1>
+    </div>
     <div class="py-5 card-body text-center justify-content-center">
-      <h1>Test Your API</h1>
+      <p class="h4">Test Your API</p>
       <button @click="getExamples()" class="btn btn-success mt-2">Test</button>
-      <div v-if="(exampleStore.examples.length >= 1) && testing == true">
-        <ul v-for="example in exampleStore.examples" :key="`get-examples-id-${example.id}`">
-          <li>id: {{ example.id }} text: {{ example.exampleText }}</li>
-        </ul>
-      </div>
-      <div v-else-if="testing == true">
+      <div v-if="(exampleStore.examples.length < 1) && testing == true">
         <h5>Create an example to test!</h5>
       </div>
     </div>
@@ -39,5 +37,16 @@ let testing = ref(false);
 
 
 <style lang="scss" scoped>
+
+  .card {
+    height: 300px;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.411);
+
+    transition: all .4s ease-in-out;
+
+    &:hover {
+      box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.596);
+    }
+  }
 
 </style>

@@ -1,5 +1,10 @@
 @import '_main.scss';
 
+//custom colors
+:root {
+  --bs-body-bg: #020617;
+}
+
 #app {
   display: flex;
   flex-direction: column;
