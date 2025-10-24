@@ -7,9 +7,11 @@ import NavTopBar from './components/ExampleStuff/NavTopBar.vue';
 
 <template>
 <div class="sidebar-wrapper border-right-blue">
+  <!--NOTE Remove NavSideBar tag & "main" scss selector to remove padding-left -->
   <NavSideBar />
 </div>
 <div class="topbar-wrapper border-bottom-blue">
+  <!-- NOTE Remove "padding left" in ".topbar-wrapper" scss selector after you delete the sidebar tag -->
   <NavTopBar />
 </div>
 <main class="body-bg">
@@ -19,6 +21,8 @@ import NavTopBar from './components/ExampleStuff/NavTopBar.vue';
 </template>
 
 <style lang="scss">
+
+//Adds padding to app so content is not hidden by NavSideBar
   main {
     padding-left: 250px;
   }

@@ -16,7 +16,7 @@ watch(() =>
         break;
       case 'Docs':
         page.value.name = 'Documentation';
-        page.value.description = 'Setup and Integration guide'
+        page.value.description = 'Setup and Integration Guide'
         break;
       case 'Example':
         page.value.name = 'API Explorer';
