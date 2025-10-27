@@ -7,7 +7,7 @@ export default defineConfigWithVueTs(
   pluginVue.configs['flat/essential'],
   vueTsConfigs.recommended,
   {
-    files: ['**/*.{js,mjs,cjs,vue}'],
+    files: ['**/*.{js,mjs,cjs,ts,tsx,vue}'],
     languageOptions: {
       globals: {
         ...globals.browser,

@@ -25,7 +25,7 @@ function isActive(name: string){
     </div>
     <!-- !SECTION -->
     <!-- SECTION Nav Links -->
-    <div class="mt-3">
+    <nav class="mt-3">
       <RouterLink :to="{ name: 'Home' }" >
         <div class="nav-link mb-2 d-inline-flex ps-2 pe-4 pt-2 rounded"
         :class="{ 'nav-link-active' : isActive('Home')}"
@@ -66,7 +66,7 @@ function isActive(name: string){
           <p class="h5 ms-2">FAQ</p>
         </div>
       </RouterLink>
-    </div>
+    </nav>
     <!-- !SECTION -->
     <div class="account-info border-top-blue">
       <Login />

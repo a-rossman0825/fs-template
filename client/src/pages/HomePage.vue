@@ -1,5 +1,6 @@
 <script lang="ts" setup>
 import HeroCard from '@/components/ExampleStuff/HeroCard.vue';
+import OverviewCard from '@/components/ExampleStuff/OverviewCard.vue';
 import PageCard from '@/components/ExampleStuff/PageCard.vue';
 import StackCard from '@/components/ExampleStuff/StackCard.vue';
 
@@ -16,7 +17,7 @@ const backTechs = [ { name: 'C#/.NET', icon: 'mdi-language-csharp', color: 'purp
 
 <template>
   <!-- SECTION Hero Card-->
-  <section class="container pt-3">
+  <main class="container pt-3">
     <div class="pb-3 mb-2">
     <HeroCard />
     </div>
@@ -31,7 +32,7 @@ const backTechs = [ { name: 'C#/.NET', icon: 'mdi-language-csharp', color: 'purp
     <!-- SECTION Stack Cards -->
     <div class="row justify-content-center mb-4">
       <!-- NOTE Front End Card -->
-      <div class="col-12 col-md-6">
+      <section class="col-12 col-md-6">
         <div class="stack-card">
           <div class="card-body ps-4 py-3">
             <p class="h3 text-light"><span><i class="mdi mdi-desktop-classic fs-3"></i></span> Frontend Stack</p>
@@ -39,9 +40,9 @@ const backTechs = [ { name: 'C#/.NET', icon: 'mdi-language-csharp', color: 'purp
             <StackCard v-for="tech in frontTechs" :key="`front-end-tech-name-${tech.name}`" :tech="tech" />
           </div>
         </div>
-      </div>
+      </section>
       <!-- NOTE Back End Card -->
-      <div class="col-12 col-md-6">
+      <section class="col-12 col-md-6">
         <div class="stack-card">
           <div class="card-body ps-4 py-3">
             <p class="h3 text-light"><span><i class="mdi mdi-desktop-classic fs-3"></i></span> Backend Stack</p>
@@ -49,10 +50,15 @@ const backTechs = [ { name: 'C#/.NET', icon: 'mdi-language-csharp', color: 'purp
             <StackCard v-for="tech in backTechs" :key="`back-end-tech-name-${tech.name}`" :tech="tech" />
           </div>
         </div>
-      </div>
+      </section>
     </div>
     <!-- !SECTION -->
-  </section>
+     <!-- SECTION Template Overview -->
+    <div class="pb-3 mb-2">
+      <OverviewCard />
+    </div>
+    <!-- !SECTION -->
+  </main>
 </template>
 
 
