@@ -1,7 +1,7 @@
 #!/bin/bash
 # Usage: From project root folder:  ./scripts/migrate.sh MigrationName
 
-if [ -z "$1"]; then
+if [ -z "$1" ]; then
   echo "please provide a migration name."
   exit 1
 fi

@@ -10,7 +10,8 @@
     "types": [
       "vite/client",
       "./@types/vue-eslint-config-typescript"
-  ]
+  ],
+  "lib": ["es2015", "dom"]
   },
   "include": ["env.d.ts", "@types/**/*.d.ts", "src/**/*", "src/**/*.vue"],
   "exclude": ["node_modules", "dist"]

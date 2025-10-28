@@ -6,6 +6,9 @@
 # appsettings
 appsettings.Development.json
 
+# template Migrations (delete if you want your migrations to be pushed to GitHub)
+server/Migrations/
+
 # User-specific files
 *.rsuser
 *.suo
