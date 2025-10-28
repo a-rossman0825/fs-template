@@ -8,9 +8,8 @@ using Microsoft.Extensions.Hosting;
 using Microsoft.OpenApi.Models;
 using fs_template.Data;
 using CodeWorks.Utils;
-
-// using fs_template.Services;
-// using fs_template.Repositories;
+using fs_template.Services;
+using fs_template.Repositories;
 
 namespace fs_template;
 
