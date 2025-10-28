@@ -1,32 +1,15 @@
 //@ts-nocheck
 
-import fs from 'fs';
-import path from 'path';
-import { createInterface } from 'readline';
+const fs = require('fs');
+const path = require('path');
 
-
-const rl = createInterface({
-  input: process.stdin,
-  output: process.stdout
-});
-
-// user input prompting
-function prompt(question) {
-  return new Promise(resolve => rl.question(question, resolve));
-}
 
 async function setup(){
   console.log('Welcome to your Fullstack Project Template setup.\n');
 
-  //Project name from user
-  const projectName = await prompt('Enter your project name (.eg., cool-fs-app)');
-  if (!projectName || projectName.trim() === '') {
-    console.log('Project name is required');
-    rl.close();
-    return;
-  }
-
-  console.log(`\n Setting up project: ${projectName}\n`);
+  //Project name from user's dir name
+  const projectName = path.basename(process.cwd());
+  console.log(`\nSetting up project: ${projectName}\n`);
 
   const tokens = {
     '{{PROJECT_NAME}}': projectName.toLowerCase(),
@@ -92,7 +75,6 @@ async function setup(){
     console.log(`    Created workspace file: ${projectName.toLowerCase()}.code-workspace`);
   }
 
-  rl.close();
   console.log('Setup complete.');
 }
 
