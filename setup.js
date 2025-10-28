@@ -73,6 +73,10 @@ async function setup(){
     fs.renameSync('fs-template.code-workspace', `${projectName.toLowerCase()}.code-workspace`);
     console.log(`    Created workspace file: ${projectName.toLowerCase()}.code-workspace`);
   }
+  if (fs.existsSync('fs-template.sln')) {
+    fs.renameSync('fs-template.sln', `${projectName.toLowerCase()}.sln`);
+    console.log(`    Created solution file: ${projectName.toLowerCase()}.sln`);
+  }
 
   console.log('Setup complete.');
 }
