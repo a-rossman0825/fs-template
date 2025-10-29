@@ -3,7 +3,7 @@
 
 ### For Vue.js + TypeScript & C#/.NET Full Stack Projects
 
-![Dashboard Preview](./docs/img/dashboard_screenshot.png)
+![Dashboard Preview](./docs/img/dashboard-screenshot.png)
 
 ---
 
