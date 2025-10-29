@@ -91,8 +91,9 @@
 #### 4. Create Your MySQL Database (If you haven't already).
 
 #### 5. Update env.ts
-1. In VS Code in the project workspace, move into the client/src/env.ts file.
-2. Update domain, clientId, and audience with your auth0 application & API variables (audience is your API Identifier).
+1. In VS Code in the project workspace, move into the client/src/ folder and create a file named "env.ts".
+3. copy the contents of "env.local.ts" into your "env.ts" file.
+2. Update domain, clientId, and audience with your auth0 application & API variables (audience is your API Identifier) in your env.ts file.
 
 #### 6. Create Server Connection
 1. In VS Code in the project workspace, move into the server/ folder.
