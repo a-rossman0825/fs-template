@@ -50,7 +50,7 @@
 - **[Auth0 Provider]** - Middleware for validating and authorizing Auth0-issued tokens.
 ---
 
-## Setup Guide
+## Setup/Launch Guide
 
 This Template requires [Vite](https://vite.dev/) v5.4+ to run.
 
