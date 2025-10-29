@@ -9,7 +9,6 @@ package-lock.json
 .env.local
 .env.*.local
 env.ts
-
 # Log files
 npm-debug.log*
 yarn-debug.log*
