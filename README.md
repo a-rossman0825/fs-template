@@ -52,11 +52,10 @@
 
 ## Setup/Launch Guide
 
-This Template requires [Vite](https://vite.dev/) v5.4+ to run.
 
 #### 1. Clone the Template
-1. click "use this template" in the [github repo](https://vite.dev/).
-2. [] Name & Create your repository.
+1. click "use this template" in the [github repo](https://github.com/a-rossman0825/fs-template).
+2. Name & Create your repository.
 3. Get the Https url or SSH key from the "Code" dropdown on your github repository.
 4. in the desired directory, run: 
     ```bash
