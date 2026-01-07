@@ -13,7 +13,7 @@ namespace fs_template.Repositories
       return _context.Examples.Find(id);
     }
 
-    public async  Task<List<Example>> GetAll()
+    public async Task<List<Example>> GetAll()
     {
       return await _context.Examples.ToListAsync();
     }

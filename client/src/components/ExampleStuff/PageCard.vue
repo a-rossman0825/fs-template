@@ -16,13 +16,26 @@ defineProps<{ page: {
 
 <template>
   <RouterLink :to="{ name: `${ page.domain }`}">
-    <div class="card bg-dark" :class="`hover-${ page.color }`" >
+    <div 
+      class="card bg-dark" 
+      :class="`hover-${ page.color }`"
+    >
       <div class="card-body ps-4 ms-2">
-        <div :class="`bg-${ page.color }`" class="badge text-center pt-1 rounded">
-          <i class="mdi text-light fs-2" :class="page.icon"></i> 
+        <div 
+          :class="`bg-${ page.color }`" 
+          class="badge text-center pt-1 rounded"
+        >
+          <i 
+            class="mdi text-light fs-2" 
+            :class="page.icon" 
+          />
         </div>
-        <p class="text-light h4 mt-3">{{ page.name }}</p>
-        <p class="text-secondary fw-bold">{{ page.description }}</p>
+        <p class="text-light h4 mt-3">
+          {{ page.name }}
+        </p>
+        <p class="text-secondary fw-bold">
+          {{ page.description }}
+        </p>
       </div>
     </div>
   </RouterLink>

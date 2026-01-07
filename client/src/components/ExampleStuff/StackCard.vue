@@ -14,17 +14,36 @@ defineProps<{ tech: {
 
 <template>
   <div class="card pe-4 mb-3">
-      <a :href="tech.link" target="_blank" rel="noopener" class="card-body p-0 px-2 d-flex align-items-center justify-content-between" :class="`hover-${ tech.color }`">
-        <div class="d-flex align-items-center justify-content-start gap-3">
-          <div  class="badge text-center rounded" :class="`bg-${ tech.color }`">
-            <i class="mdi text-light fs-4" :class="tech.icon"></i> 
-          </div>
-          <p class="text-light pt-3">{{ tech.name }}</p>
+    <a 
+      :href="tech.link" 
+      target="_blank" 
+      rel="noopener" 
+      class="card-body p-0 px-2 d-flex align-items-center justify-content-between" 
+      :class="`hover-${ tech.color }`"
+    >
+      <div class="d-flex align-items-center justify-content-start gap-3">
+        <div 
+          class="badge text-center rounded" 
+          :class="`bg-${ tech.color }`"
+        >
+          <i 
+            class="mdi text-light fs-4" 
+            :class="tech.icon" 
+          /> 
         </div>
-        <div>
-          <p class="pt-3 pe-1" :class="`text-${ tech.color }`">{{ tech.version }}</p>
-        </div>
-      </a>
+        <p class="text-light pt-3">
+          {{ tech.name }}
+        </p>
+      </div>
+      <div>
+        <p 
+          class="pt-3 pe-1" 
+          :class="`text-${ tech.color }`"
+        >
+          {{ tech.version }}
+        </p>
+      </div>
+    </a>
   </div>
 </template>
 

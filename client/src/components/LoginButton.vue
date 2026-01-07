@@ -1,6 +1,6 @@
 <script lang="ts" setup>
 import { AuthService } from '@/services/AuthService.ts';
-import { useAuthStore } from '@/stores/AuthStore.ts';
+import { useAuthStore } from '@/stores/AuthStore';
 import { Pop } from '@/utils/Pop.ts';
 import { computed } from 'vue';
 
@@ -10,6 +10,7 @@ const authStore = useAuthStore();
 const displayName = computed(() => {
   const name = authStore.account?.name;
     if (name) return name.includes('@') ? name.split('@')[0] : name;
+    return "";
 })
 
 
@@ -32,17 +33,37 @@ async function logout() {
 
 <template>
   <span>
-    <button class="btn text-green" @click="login" v-if="!authStore.identity">
+    <button 
+      v-if="!authStore.identity"
+      class="btn text-green" 
+      @click="login" 
+    >
       Login
     </button>
     <div v-else>
-      <div class="d-flex justify-content-between" v-if="authStore.account?.picture || authStore.identity?.picture">
+      <div 
+        v-if="authStore.account?.picture || authStore.identity?.picture" 
+        class="d-flex justify-content-between"
+      >
         <div class="d-inline-flex">
-          <img :src="authStore.account?.picture || authStore.identity?.picture" :alt="authStore.account?.name || 'account photo'" height="40" class="user-img"/>
-          <p class="text-light mt-2 ms-2">{{ displayName }}</p>
+          <img 
+            :src="authStore.account?.picture || authStore.identity?.picture" 
+            :alt="authStore.account?.name || 'account photo'" 
+            height="40" 
+            class="user-img"
+          >
+          <p class="text-light mt-2 ms-2">
+            {{ displayName }}
+          </p>
         </div>
         <div>
-          <button role="button" class="account-btn me-2 fs-4" @click="logout"><i class="mdi mdi-chevron-up" ></i></button>
+          <button 
+            role="button"
+            class="account-btn me-2 fs-4" 
+            @click="logout"
+          >
+            <i class="mdi mdi-chevron-up" />
+          </button>
         </div>
       </div>
     </div>

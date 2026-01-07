@@ -1,6 +1,7 @@
 import Axios from 'axios';
 import { baseURL } from '@/env';
 import { logger } from '@/utils/Logger';
+import type { AxiosError } from 'axios';
 
 export const api = Axios.create({
   baseURL,
@@ -10,7 +11,7 @@ export const api = Axios.create({
 api.interceptors.request.use(config => config, handleAxiosError);
 api.interceptors.response.use(response => response, handleAxiosError);
 
-function handleAxiosError(error: any){
+function handleAxiosError(error: AxiosError){
   if (error.response) {
     logger.warn('[📡 AXIOS_ERROR_RESPONSE_DATA]', error.response.data);
   } else if (error.request){

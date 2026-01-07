@@ -1,13 +1,5 @@
-<script lang="ts" setup>
+<script lang="ts" setup></script>
 
-</script>
+<template>This is the FAQ Page</template>
 
-
-<template>
-  This is the FAQ Page
-</template>
-
-
-<style lang="scss" scoped>
-
-</style>
+<style lang="scss" scoped></style>

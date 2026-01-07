@@ -40,6 +40,8 @@ namespace fs_template.Services
 
     internal async Task<string> DeleteExample(int id, string userId)
     {
+
+
       Example? example = _repo.GetById(id);
       if (example != null)
       {
@@ -47,8 +49,8 @@ namespace fs_template.Services
         {
           return "You Cannot Delete an Example that does not Belong to You!";
         }
-      await _repo.Delete(id);
-      return $"Example with id: {id} has been deleted";
+        await _repo.Delete(id);
+        return $"Example with id: {id} has been deleted";
       }
       return $"Example with Id: {id} Does not exist!";
     }

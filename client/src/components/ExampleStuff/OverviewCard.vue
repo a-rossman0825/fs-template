@@ -11,19 +11,25 @@
     <div class="row ms-2 text-light">
       <!-- SECTION Architecture overview -->
       <div class="col-md-4">
-        <p class="h5">Architecture</p>
+        <p class="h5">
+          Architecture
+        </p>
         <p>Modern full-stack architecture with clear separation between frontend and backend, enabling scalable and maintainable applications.</p>
       </div>
       <!-- !SECTION -->
-       <!-- SECTION Auth overview -->
+      <!-- SECTION Auth overview -->
       <div class="col-md-4">
-        <p class="h5">Authentication</p>
+        <p class="h5">
+          Authentication
+        </p>
         <p>Secure authentication and authorization using Auth0 with JWT tokens for seamless user management and security.</p>
       </div>
       <!-- !SECTION -->
-       <!-- SECTION Database overview -->
+      <!-- SECTION Database overview -->
       <div class="col-md-4">
-        <p class="h5">Database</p>
+        <p class="h5">
+          Database
+        </p>
         <p>Robust data persistence with Entity Framework ORM and MySQL Database, ensuring reliable data management and relationships.</p>
       </div>
     </div>

@@ -3,54 +3,52 @@ import { dev } from '../env'
 export type LoggerType = 'log' | 'error' | 'warn' | 'assert' | 'trace' | 'groupCollapsed' | 'groupEnd';
 
 export interface LogFunction {
-  (type: LoggerType, content: IArguments): void;
+  (type: LoggerType, content: unknown[]): void;
 }
 
 export interface LoggerInterface {
-  log: (...args: any[])=> void;
-  error: (...args: any[])=> void;
-  warn: (...args: any[])=> void;
-  assert: (...args: any[])=> void;
-  trace: (...args: any[])=> void;
-  groupCollapsed: (...args: any[])=> void;
-  groupEnd: (...args: any[])=> void;
+  log: (...args: unknown[]) => void;
+  error: (...args: unknown[]) => void;
+  warn: (...args: unknown[]) => void;
+  assert: (...args: unknown[]) => void;
+  trace: (...args: unknown[]) => void;
+  groupCollapsed: (...args: unknown[]) => void;
+  groupEnd: (...args: unknown[]) => void;
 }
 
 const log: LogFunction = function (type, content) {
   if (dev) {
-
-    (console[type] as (...args: any[])=> void)(`[${type}] ${new Date().toLocaleTimeString()}\n`, ...content);
+    (console[type] as (...args: unknown[]) => void)(`[${type}] ${new Date().toLocaleTimeString()}\n`, ...content);
   } else {
     switch (type) {
       case 'log':
-        case 'assert':
-          return;
+      case 'assert':
+        return;
     }
-
-    (console[type] as (...args: any[])=> void)(`[${type}] ${new Date().toLocaleTimeString()}\n`, ...content);
+    (console[type] as (...args: unknown[]) => void)(`[${type}] ${new Date().toLocaleTimeString()}\n`, ...content);
   }
 };
 
-export const logger = {
-  log(string: string, content: IArguments) {
-    log('log', arguments);
+export const logger: LoggerInterface = {
+  log(...args: unknown[]) {
+    log('log', args);
   },
-  error(string: string, content: IArguments) {
-    log('error', arguments)
+  error(...args: unknown[]) {
+    log('error', args);
   },
-  warn(string: string, content: IArguments) {
-    log('warn', arguments)
+  warn(...args: unknown[]) {
+    log('warn', args);
   },
-  assert(string: string, content: IArguments) {
-    log('assert', arguments)
+  assert(...args: unknown[]) {
+    log('assert', args);
   },
-  trace(string: string, content: IArguments) {
-    log('trace', arguments)
+  trace(...args: unknown[]) {
+    log('trace', args);
   },
-  groupCollapsed(string: string, content: IArguments) {
-    log('groupCollapsed', arguments)
+  groupCollapsed(...args: unknown[]) {
+    log('groupCollapsed', args);
   },
-  groupEnd(string: string, content: IArguments) {
-    log('groupEnd', arguments)
+  groupEnd(...args: unknown[]) {
+    log('groupEnd', args);
   },
 };

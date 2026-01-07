@@ -27,7 +27,7 @@ public class ExampleController : ControllerBase
       return BadRequest(exception.Message);
     }
   }
-  
+
   [HttpPost]
   public async Task<ActionResult<ExampleDTO>> CreateExample([FromBody] Example exampleData)
   {

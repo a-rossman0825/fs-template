@@ -1,1 +1,1408 @@
-[{"/Users/anthonyrossman/Source/Projects/fs-template/client/src/main.ts":"1","/Users/anthonyrossman/Source/Projects/fs-template/client/src/App.vue":"2","/Users/anthonyrossman/Source/Projects/fs-template/client/src/router.ts":"3","/Users/anthonyrossman/Source/Projects/fs-template/client/src/utils/registerGlobalComponents.ts":"4","/Users/anthonyrossman/Source/Projects/fs-template/client/src/components/ExampleStuff/NavTopBar.vue":"5","/Users/anthonyrossman/Source/Projects/fs-template/client/src/components/ExampleStuff/NavSideBar.vue":"6","/Users/anthonyrossman/Source/Projects/fs-template/client/src/components/Login.vue":"7","/Users/anthonyrossman/Source/Projects/fs-template/client/src/utils/Pop.ts":"8","/Users/anthonyrossman/Source/Projects/fs-template/client/src/Stores/AuthStore.ts":"9","/Users/anthonyrossman/Source/Projects/fs-template/client/src/services/AuthService.ts":"10","/Users/anthonyrossman/Source/Projects/fs-template/client/src/services/AxiosService.ts":"11","/Users/anthonyrossman/Source/Projects/fs-template/client/src/services/AccountService.ts":"12","/Users/anthonyrossman/Source/Projects/fs-template/client/src/utils/Logger.ts":"13","/Users/anthonyrossman/Source/Projects/fs-template/client/src/models/Account.ts":"14"},{"size":520,"mtime":1767761816454,"results":"15","hashOfConfig":"16"},{"size":977,"mtime":1767763607877,"results":"17","hashOfConfig":"16"},{"size":774,"mtime":1767761816455,"results":"18","hashOfConfig":"16"},{"size":489,"mtime":1767761987489,"results":"19","hashOfConfig":"16"},{"size":1744,"mtime":1767761816454,"results":"20","hashOfConfig":"16"},{"size":3532,"mtime":1767761816454,"results":"21","hashOfConfig":"16"},{"size":1711,"mtime":1767761816454,"results":"22","hashOfConfig":"16"},{"size":7722,"mtime":1767761816456,"results":"23","hashOfConfig":"16"},{"size":299,"mtime":1767761816453,"results":"24","hashOfConfig":"16"},{"size":1212,"mtime":1767761816455,"results":"25","hashOfConfig":"16"},{"size":656,"mtime":1767761816455,"results":"26","hashOfConfig":"16"},{"size":521,"mtime":1767761816455,"results":"27","hashOfConfig":"16"},{"size":1502,"mtime":1767761816456,"results":"28","hashOfConfig":"16"},{"size":294,"mtime":1767761816455,"results":"29","hashOfConfig":"16"},{"filePath":"30","messages":"31","suppressedMessages":"32","errorCount":0,"fatalErrorCount":0,"warningCount":0,"fixableErrorCount":0,"fixableWarningCount":0},"xm7iuh",{"filePath":"33","messages":"34","suppressedMessages":"35","errorCount":0,"fatalErrorCount":0,"warningCount":0,"fixableErrorCount":0,"fixableWarningCount":0},{"filePath":"36","messages":"37","suppressedMessages":"38","errorCount":1,"fatalErrorCount":0,"warningCount":0,"fixableErrorCount":0,"fixableWarningCount":0,"source":null},{"filePath":"39","messages":"40","suppressedMessages":"41","errorCount":2,"fatalErrorCount":0,"warningCount":0,"fixableErrorCount":0,"fixableWarningCount":0,"source":null},{"filePath":"42","messages":"43","suppressedMessages":"44","errorCount":0,"fatalErrorCount":0,"warningCount":12,"fixableErrorCount":0,"fixableWarningCount":12,"source":null},{"filePath":"45","messages":"46","suppressedMessages":"47","errorCount":0,"fatalErrorCount":0,"warningCount":97,"fixableErrorCount":0,"fixableWarningCount":97,"source":null},{"filePath":"48","messages":"49","suppressedMessages":"50","errorCount":2,"fatalErrorCount":0,"warningCount":14,"fixableErrorCount":0,"fixableWarningCount":10,"source":null},{"filePath":"51","messages":"52","suppressedMessages":"53","errorCount":11,"fatalErrorCount":0,"warningCount":0,"fixableErrorCount":6,"fixableWarningCount":0,"source":null},{"filePath":"54","messages":"55","suppressedMessages":"56","errorCount":0,"fatalErrorCount":0,"warningCount":0,"fixableErrorCount":0,"fixableWarningCount":0},{"filePath":"57","messages":"58","suppressedMessages":"59","errorCount":1,"fatalErrorCount":0,"warningCount":0,"fixableErrorCount":0,"fixableWarningCount":0,"source":null},{"filePath":"60","messages":"61","suppressedMessages":"62","errorCount":1,"fatalErrorCount":0,"warningCount":0,"fixableErrorCount":0,"fixableWarningCount":0,"source":null},{"filePath":"63","messages":"64","suppressedMessages":"65","errorCount":1,"fatalErrorCount":0,"warningCount":0,"fixableErrorCount":0,"fixableWarningCount":0,"source":null},{"filePath":"66","messages":"67","suppressedMessages":"68","errorCount":30,"fatalErrorCount":0,"warningCount":0,"fixableErrorCount":0,"fixableWarningCount":0,"source":null},{"filePath":"69","messages":"70","suppressedMessages":"71","errorCount":0,"fatalErrorCount":0,"warningCount":0,"fixableErrorCount":0,"fixableWarningCount":0},"/Users/anthonyrossman/Source/Projects/fs-template/client/src/main.ts",[],[],"/Users/anthonyrossman/Source/Projects/fs-template/client/src/App.vue",[],[],"/Users/anthonyrossman/Source/Projects/fs-template/client/src/router.ts",["72"],[],"/Users/anthonyrossman/Source/Projects/fs-template/client/src/utils/registerGlobalComponents.ts",["73","74"],[],"/Users/anthonyrossman/Source/Projects/fs-template/client/src/components/ExampleStuff/NavTopBar.vue",["75","76","77","78","79","80","81","82","83","84","85","86"],[],"/Users/anthonyrossman/Source/Projects/fs-template/client/src/components/ExampleStuff/NavSideBar.vue",["87","88","89","90","91","92","93","94","95","96","97","98","99","100","101","102","103","104","105","106","107","108","109","110","111","112","113","114","115","116","117","118","119","120","121","122","123","124","125","126","127","128","129","130","131","132","133","134","135","136","137","138","139","140","141","142","143","144","145","146","147","148","149","150","151","152","153","154","155","156","157","158","159","160","161","162","163","164","165","166","167","168","169","170","171","172","173","174","175","176","177","178","179","180","181","182","183"],[],"/Users/anthonyrossman/Source/Projects/fs-template/client/src/components/Login.vue",["184","185","186","187","188","189","190","191","192","193","194","195","196","197","198","199"],[],"/Users/anthonyrossman/Source/Projects/fs-template/client/src/utils/Pop.ts",["200","201","202","203","204","205","206","207","208","209","210"],[],"/Users/anthonyrossman/Source/Projects/fs-template/client/src/Stores/AuthStore.ts",[],[],"/Users/anthonyrossman/Source/Projects/fs-template/client/src/services/AuthService.ts",["211"],[],"/Users/anthonyrossman/Source/Projects/fs-template/client/src/services/AxiosService.ts",["212"],[],"/Users/anthonyrossman/Source/Projects/fs-template/client/src/services/AccountService.ts",["213"],[],"/Users/anthonyrossman/Source/Projects/fs-template/client/src/utils/Logger.ts",["214","215","216","217","218","219","220","221","222","223","224","225","226","227","228","229","230","231","232","233","234","235","236","237","238","239","240","241","242","243"],[],"/Users/anthonyrossman/Source/Projects/fs-template/client/src/models/Account.ts",[],[],{"ruleId":"244","severity":2,"message":"245","line":4,"column":25,"nodeType":"246","messageId":"247","endLine":4,"endColumn":28,"suggestions":"248"},{"ruleId":"244","severity":2,"message":"245","line":2,"column":54,"nodeType":"246","messageId":"247","endLine":2,"endColumn":57,"suggestions":"249"},{"ruleId":"244","severity":2,"message":"245","line":5,"column":75,"nodeType":"246","messageId":"247","endLine":5,"endColumn":78,"suggestions":"250"},{"ruleId":"251","severity":1,"message":"252","line":43,"column":29,"nodeType":"253","messageId":"254","endLine":43,"endColumn":29,"fix":"255"},{"ruleId":"251","severity":1,"message":"256","line":43,"column":44,"nodeType":"257","messageId":"258","endLine":43,"endColumn":44,"fix":"259"},{"ruleId":"251","severity":1,"message":"260","line":44,"column":39,"nodeType":"253","messageId":"254","endLine":44,"endColumn":39,"fix":"261"},{"ruleId":"251","severity":1,"message":"262","line":44,"column":61,"nodeType":"257","messageId":"258","endLine":44,"endColumn":61,"fix":"263"},{"ruleId":"264","severity":1,"message":"265","line":47,"column":38,"nodeType":"266","messageId":"267","endLine":47,"endColumn":59,"fix":"268"},{"ruleId":"251","severity":1,"message":"269","line":47,"column":60,"nodeType":"253","messageId":"254","endLine":47,"endColumn":60,"fix":"270"},{"ruleId":"271","severity":1,"message":"272","line":47,"column":60,"nodeType":"273","messageId":"274","endLine":47,"endColumn":98,"fix":"275"},{"ruleId":"251","severity":1,"message":"276","line":47,"column":98,"nodeType":"257","messageId":"258","endLine":47,"endColumn":98,"fix":"277"},{"ruleId":"264","severity":1,"message":"265","line":48,"column":38,"nodeType":"266","messageId":"267","endLine":48,"endColumn":54,"fix":"278"},{"ruleId":"251","severity":1,"message":"269","line":48,"column":55,"nodeType":"253","messageId":"254","endLine":48,"endColumn":55,"fix":"279"},{"ruleId":"271","severity":1,"message":"272","line":48,"column":55,"nodeType":"273","messageId":"274","endLine":48,"endColumn":87,"fix":"280"},{"ruleId":"251","severity":1,"message":"276","line":48,"column":87,"nodeType":"257","messageId":"258","endLine":48,"endColumn":87,"fix":"281"},{"ruleId":"282","severity":1,"message":"283","line":16,"column":1,"nodeType":null,"endLine":16,"endColumn":5,"fix":"284"},{"ruleId":"282","severity":1,"message":"283","line":17,"column":1,"nodeType":null,"endLine":17,"endColumn":5,"fix":"285"},{"ruleId":"282","severity":1,"message":"286","line":18,"column":1,"nodeType":null,"endLine":18,"endColumn":7,"fix":"287"},{"ruleId":"282","severity":1,"message":"288","line":19,"column":1,"nodeType":null,"endLine":19,"endColumn":9,"fix":"289"},{"ruleId":"264","severity":1,"message":"290","line":19,"column":45,"nodeType":"266","messageId":"267","endLine":19,"endColumn":66,"fix":"291"},{"ruleId":"251","severity":1,"message":"269","line":19,"column":67,"nodeType":"253","messageId":"254","endLine":19,"endColumn":67,"fix":"292"},{"ruleId":"271","severity":1,"message":"272","line":19,"column":67,"nodeType":"273","messageId":"274","endLine":19,"endColumn":120,"fix":"293"},{"ruleId":"251","severity":1,"message":"276","line":19,"column":120,"nodeType":"257","messageId":"258","endLine":19,"endColumn":120,"fix":"294"},{"ruleId":"282","severity":1,"message":"286","line":20,"column":1,"nodeType":null,"endLine":20,"endColumn":7,"fix":"295"},{"ruleId":"282","severity":1,"message":"286","line":21,"column":1,"nodeType":null,"endLine":21,"endColumn":7,"fix":"296"},{"ruleId":"282","severity":1,"message":"288","line":22,"column":1,"nodeType":null,"endLine":22,"endColumn":9,"fix":"297"},{"ruleId":"251","severity":1,"message":"298","line":22,"column":39,"nodeType":"253","messageId":"254","endLine":22,"endColumn":39,"fix":"299"},{"ruleId":"251","severity":1,"message":"300","line":22,"column":48,"nodeType":"257","messageId":"258","endLine":22,"endColumn":48,"fix":"301"},{"ruleId":"282","severity":1,"message":"288","line":23,"column":1,"nodeType":null,"endLine":23,"endColumn":9,"fix":"302"},{"ruleId":"251","severity":1,"message":"303","line":23,"column":41,"nodeType":"253","messageId":"254","endLine":23,"endColumn":41,"fix":"304"},{"ruleId":"251","severity":1,"message":"305","line":23,"column":57,"nodeType":"257","messageId":"258","endLine":23,"endColumn":57,"fix":"306"},{"ruleId":"282","severity":1,"message":"286","line":24,"column":1,"nodeType":null,"endLine":24,"endColumn":7,"fix":"307"},{"ruleId":"282","severity":1,"message":"283","line":25,"column":1,"nodeType":null,"endLine":25,"endColumn":5,"fix":"308"},{"ruleId":"282","severity":1,"message":"283","line":26,"column":1,"nodeType":null,"endLine":26,"endColumn":5,"fix":"309"},{"ruleId":"282","severity":1,"message":"283","line":27,"column":1,"nodeType":null,"endLine":27,"endColumn":5,"fix":"310"},{"ruleId":"282","severity":1,"message":"283","line":28,"column":1,"nodeType":null,"endLine":28,"endColumn":5,"fix":"311"},{"ruleId":"282","severity":1,"message":"286","line":29,"column":1,"nodeType":null,"endLine":29,"endColumn":7,"fix":"312"},{"ruleId":"313","severity":1,"message":"314","line":29,"column":41,"nodeType":"315","messageId":"316","endLine":29,"endColumn":43,"fix":"317"},{"ruleId":"282","severity":1,"message":"288","line":30,"column":1,"nodeType":null,"endLine":30,"endColumn":9,"fix":"318"},{"ruleId":"319","severity":1,"message":"320","line":30,"column":14,"nodeType":"266","messageId":"321","endLine":30,"endColumn":72,"fix":"322"},{"ruleId":"282","severity":1,"message":"323","line":31,"column":1,"nodeType":null,"endLine":31,"endColumn":9,"fix":"324"},{"ruleId":"282","severity":1,"message":"288","line":32,"column":1,"nodeType":null,"endLine":32,"endColumn":9,"fix":"325"},{"ruleId":"282","severity":1,"message":"326","line":33,"column":1,"nodeType":null,"endLine":33,"endColumn":11,"fix":"327"},{"ruleId":"251","severity":1,"message":"328","line":33,"column":30,"nodeType":"253","messageId":"254","endLine":33,"endColumn":30,"fix":"329"},{"ruleId":"271","severity":1,"message":"272","line":33,"column":30,"nodeType":"273","messageId":"274","endLine":33,"endColumn":58,"fix":"330"},{"ruleId":"251","severity":1,"message":"331","line":33,"column":58,"nodeType":"257","messageId":"258","endLine":33,"endColumn":58,"fix":"332"},{"ruleId":"282","severity":1,"message":"326","line":34,"column":1,"nodeType":null,"endLine":34,"endColumn":11,"fix":"333"},{"ruleId":"251","severity":1,"message":"328","line":34,"column":30,"nodeType":"253","messageId":"254","endLine":34,"endColumn":30,"fix":"334"},{"ruleId":"251","severity":1,"message":"331","line":34,"column":39,"nodeType":"257","messageId":"258","endLine":34,"endColumn":39,"fix":"335"},{"ruleId":"282","severity":1,"message":"288","line":35,"column":1,"nodeType":null,"endLine":35,"endColumn":9,"fix":"336"},{"ruleId":"282","severity":1,"message":"286","line":36,"column":1,"nodeType":null,"endLine":36,"endColumn":7,"fix":"337"},{"ruleId":"282","severity":1,"message":"286","line":37,"column":1,"nodeType":null,"endLine":37,"endColumn":7,"fix":"338"},{"ruleId":"282","severity":1,"message":"288","line":38,"column":1,"nodeType":null,"endLine":38,"endColumn":9,"fix":"339"},{"ruleId":"319","severity":1,"message":"320","line":38,"column":14,"nodeType":"266","messageId":"321","endLine":38,"endColumn":72,"fix":"340"},{"ruleId":"282","severity":1,"message":"323","line":39,"column":1,"nodeType":null,"endLine":39,"endColumn":9,"fix":"341"},{"ruleId":"282","severity":1,"message":"288","line":40,"column":1,"nodeType":null,"endLine":40,"endColumn":9,"fix":"342"},{"ruleId":"282","severity":1,"message":"326","line":41,"column":1,"nodeType":null,"endLine":41,"endColumn":11,"fix":"343"},{"ruleId":"251","severity":1,"message":"328","line":41,"column":30,"nodeType":"253","messageId":"254","endLine":41,"endColumn":30,"fix":"344"},{"ruleId":"271","severity":1,"message":"272","line":41,"column":30,"nodeType":"273","messageId":"274","endLine":41,"endColumn":71,"fix":"345"},{"ruleId":"251","severity":1,"message":"331","line":41,"column":71,"nodeType":"257","messageId":"258","endLine":41,"endColumn":71,"fix":"346"},{"ruleId":"282","severity":1,"message":"326","line":42,"column":1,"nodeType":null,"endLine":42,"endColumn":11,"fix":"347"},{"ruleId":"251","severity":1,"message":"328","line":42,"column":30,"nodeType":"253","messageId":"254","endLine":42,"endColumn":30,"fix":"348"},{"ruleId":"251","severity":1,"message":"331","line":42,"column":43,"nodeType":"257","messageId":"258","endLine":42,"endColumn":43,"fix":"349"},{"ruleId":"282","severity":1,"message":"288","line":43,"column":1,"nodeType":null,"endLine":43,"endColumn":9,"fix":"350"},{"ruleId":"282","severity":1,"message":"286","line":44,"column":1,"nodeType":null,"endLine":44,"endColumn":7,"fix":"351"},{"ruleId":"282","severity":1,"message":"286","line":45,"column":1,"nodeType":null,"endLine":45,"endColumn":7,"fix":"352"},{"ruleId":"282","severity":1,"message":"288","line":46,"column":1,"nodeType":null,"endLine":46,"endColumn":9,"fix":"353"},{"ruleId":"319","severity":1,"message":"320","line":46,"column":14,"nodeType":"266","messageId":"321","endLine":46,"endColumn":72,"fix":"354"},{"ruleId":"282","severity":1,"message":"323","line":47,"column":1,"nodeType":null,"endLine":47,"endColumn":9,"fix":"355"},{"ruleId":"282","severity":1,"message":"288","line":48,"column":1,"nodeType":null,"endLine":48,"endColumn":9,"fix":"356"},{"ruleId":"282","severity":1,"message":"326","line":49,"column":1,"nodeType":null,"endLine":49,"endColumn":11,"fix":"357"},{"ruleId":"251","severity":1,"message":"328","line":49,"column":30,"nodeType":"253","messageId":"254","endLine":49,"endColumn":30,"fix":"358"},{"ruleId":"271","severity":1,"message":"272","line":49,"column":30,"nodeType":"273","messageId":"274","endLine":49,"endColumn":65,"fix":"359"},{"ruleId":"251","severity":1,"message":"331","line":49,"column":65,"nodeType":"257","messageId":"258","endLine":49,"endColumn":65,"fix":"360"},{"ruleId":"282","severity":1,"message":"326","line":50,"column":1,"nodeType":null,"endLine":50,"endColumn":11,"fix":"361"},{"ruleId":"251","severity":1,"message":"328","line":50,"column":30,"nodeType":"253","messageId":"254","endLine":50,"endColumn":30,"fix":"362"},{"ruleId":"251","severity":1,"message":"331","line":50,"column":35,"nodeType":"257","messageId":"258","endLine":50,"endColumn":35,"fix":"363"},{"ruleId":"282","severity":1,"message":"288","line":51,"column":1,"nodeType":null,"endLine":51,"endColumn":9,"fix":"364"},{"ruleId":"282","severity":1,"message":"286","line":52,"column":1,"nodeType":null,"endLine":52,"endColumn":7,"fix":"365"},{"ruleId":"282","severity":1,"message":"286","line":53,"column":1,"nodeType":null,"endLine":53,"endColumn":7,"fix":"366"},{"ruleId":"282","severity":1,"message":"288","line":54,"column":1,"nodeType":null,"endLine":54,"endColumn":9,"fix":"367"},{"ruleId":"319","severity":1,"message":"320","line":54,"column":14,"nodeType":"266","messageId":"321","endLine":54,"endColumn":72,"fix":"368"},{"ruleId":"282","severity":1,"message":"323","line":55,"column":1,"nodeType":null,"endLine":55,"endColumn":9,"fix":"369"},{"ruleId":"282","severity":1,"message":"288","line":56,"column":1,"nodeType":null,"endLine":56,"endColumn":9,"fix":"370"},{"ruleId":"282","severity":1,"message":"326","line":57,"column":1,"nodeType":null,"endLine":57,"endColumn":11,"fix":"371"},{"ruleId":"251","severity":1,"message":"328","line":57,"column":30,"nodeType":"253","messageId":"254","endLine":57,"endColumn":30,"fix":"372"},{"ruleId":"271","severity":1,"message":"272","line":57,"column":30,"nodeType":"273","messageId":"274","endLine":57,"endColumn":59,"fix":"373"},{"ruleId":"251","severity":1,"message":"331","line":57,"column":59,"nodeType":"257","messageId":"258","endLine":57,"endColumn":59,"fix":"374"},{"ruleId":"282","severity":1,"message":"326","line":58,"column":1,"nodeType":null,"endLine":58,"endColumn":11,"fix":"375"},{"ruleId":"251","severity":1,"message":"328","line":58,"column":30,"nodeType":"253","messageId":"254","endLine":58,"endColumn":30,"fix":"376"},{"ruleId":"251","severity":1,"message":"331","line":58,"column":38,"nodeType":"257","messageId":"258","endLine":58,"endColumn":38,"fix":"377"},{"ruleId":"282","severity":1,"message":"288","line":59,"column":1,"nodeType":null,"endLine":59,"endColumn":9,"fix":"378"},{"ruleId":"282","severity":1,"message":"286","line":60,"column":1,"nodeType":null,"endLine":60,"endColumn":7,"fix":"379"},{"ruleId":"282","severity":1,"message":"286","line":61,"column":1,"nodeType":null,"endLine":61,"endColumn":7,"fix":"380"},{"ruleId":"282","severity":1,"message":"288","line":62,"column":1,"nodeType":null,"endLine":62,"endColumn":9,"fix":"381"},{"ruleId":"319","severity":1,"message":"320","line":62,"column":14,"nodeType":"266","messageId":"321","endLine":62,"endColumn":72,"fix":"382"},{"ruleId":"282","severity":1,"message":"323","line":63,"column":1,"nodeType":null,"endLine":63,"endColumn":9,"fix":"383"},{"ruleId":"282","severity":1,"message":"288","line":64,"column":1,"nodeType":null,"endLine":64,"endColumn":9,"fix":"384"},{"ruleId":"282","severity":1,"message":"326","line":65,"column":1,"nodeType":null,"endLine":65,"endColumn":11,"fix":"385"},{"ruleId":"251","severity":1,"message":"328","line":65,"column":30,"nodeType":"253","messageId":"254","endLine":65,"endColumn":30,"fix":"386"},{"ruleId":"271","severity":1,"message":"272","line":65,"column":30,"nodeType":"273","messageId":"274","endLine":65,"endColumn":67,"fix":"387"},{"ruleId":"251","severity":1,"message":"331","line":65,"column":67,"nodeType":"257","messageId":"258","endLine":65,"endColumn":67,"fix":"388"},{"ruleId":"282","severity":1,"message":"326","line":66,"column":1,"nodeType":null,"endLine":66,"endColumn":11,"fix":"389"},{"ruleId":"251","severity":1,"message":"328","line":66,"column":30,"nodeType":"253","messageId":"254","endLine":66,"endColumn":30,"fix":"390"},{"ruleId":"251","severity":1,"message":"331","line":66,"column":33,"nodeType":"257","messageId":"258","endLine":66,"endColumn":33,"fix":"391"},{"ruleId":"282","severity":1,"message":"288","line":67,"column":1,"nodeType":null,"endLine":67,"endColumn":9,"fix":"392"},{"ruleId":"282","severity":1,"message":"286","line":68,"column":1,"nodeType":null,"endLine":68,"endColumn":7,"fix":"393"},{"ruleId":"282","severity":1,"message":"283","line":69,"column":1,"nodeType":null,"endLine":69,"endColumn":5,"fix":"394"},{"ruleId":"282","severity":1,"message":"283","line":70,"column":1,"nodeType":null,"endLine":70,"endColumn":5,"fix":"395"},{"ruleId":"282","severity":1,"message":"283","line":71,"column":1,"nodeType":null,"endLine":71,"endColumn":5,"fix":"396"},{"ruleId":"282","severity":1,"message":"286","line":72,"column":1,"nodeType":null,"endLine":72,"endColumn":7,"fix":"397"},{"ruleId":"282","severity":1,"message":"283","line":73,"column":1,"nodeType":null,"endLine":73,"endColumn":5,"fix":"398"},{"ruleId":"399","severity":2,"message":"400","line":1,"column":1,"nodeType":null,"messageId":"316"},{"ruleId":"401","severity":2,"message":"402","line":10,"column":30,"nodeType":"403","messageId":"404","endLine":13,"endColumn":2},{"ruleId":"264","severity":1,"message":"405","line":35,"column":36,"nodeType":"266","messageId":"267","endLine":35,"endColumn":50,"fix":"406"},{"ruleId":"407","severity":1,"message":"408","line":35,"column":51,"nodeType":"266","messageId":"409","endLine":35,"endColumn":77,"fix":"410"},{"ruleId":"264","severity":1,"message":"411","line":35,"column":51,"nodeType":"266","messageId":"267","endLine":35,"endColumn":77},{"ruleId":"407","severity":1,"message":"412","line":39,"column":51,"nodeType":"266","messageId":"409","endLine":39,"endColumn":115,"fix":"413"},{"ruleId":"264","severity":1,"message":"411","line":39,"column":51,"nodeType":"266","messageId":"267","endLine":39,"endColumn":115,"fix":"414"},{"ruleId":"271","severity":1,"message":"415","line":41,"column":11,"nodeType":"273","messageId":"416","endLine":41,"endColumn":161,"fix":"417"},{"ruleId":"264","severity":1,"message":"418","line":41,"column":81,"nodeType":"266","messageId":"267","endLine":41,"endColumn":130,"fix":"419"},{"ruleId":"264","severity":1,"message":"420","line":41,"column":131,"nodeType":"266","messageId":"267","endLine":41,"endColumn":142},{"ruleId":"264","severity":1,"message":"290","line":41,"column":143,"nodeType":"266","messageId":"267","endLine":41,"endColumn":159},{"ruleId":"313","severity":1,"message":"421","line":41,"column":159,"nodeType":"315","messageId":"422","endLine":41,"endColumn":161,"fix":"423"},{"ruleId":"264","severity":1,"message":"290","line":45,"column":33,"nodeType":"266","messageId":"267","endLine":45,"endColumn":62,"fix":"424"},{"ruleId":"264","severity":1,"message":"405","line":45,"column":63,"nodeType":"266","messageId":"267","endLine":45,"endColumn":78},{"ruleId":"271","severity":1,"message":"272","line":45,"column":79,"nodeType":"273","messageId":"274","endLine":45,"endColumn":114,"fix":"425"},{"ruleId":"313","severity":1,"message":"314","line":45,"column":108,"nodeType":"315","messageId":"316","endLine":45,"endColumn":110,"fix":"426"},{"ruleId":"244","severity":2,"message":"245","line":34,"column":23,"nodeType":"246","messageId":"247","endLine":34,"endColumn":26,"suggestions":"427"},{"ruleId":"244","severity":2,"message":"245","line":52,"column":14,"nodeType":"246","messageId":"247","endLine":52,"endColumn":17,"suggestions":"428"},{"ruleId":"429","severity":2,"message":"430","line":54,"column":11,"nodeType":"431","messageId":"432","endLine":54,"endColumn":17,"fix":"433"},{"ruleId":"429","severity":2,"message":"434","line":54,"column":24,"nodeType":"431","messageId":"432","endLine":54,"endColumn":29,"fix":"435"},{"ruleId":"429","severity":2,"message":"436","line":54,"column":36,"nodeType":"431","messageId":"432","endLine":54,"endColumn":41,"fix":"437"},{"ruleId":"429","severity":2,"message":"438","line":54,"column":50,"nodeType":"431","messageId":"432","endLine":54,"endColumn":62,"fix":"439"},{"ruleId":"244","severity":2,"message":"245","line":132,"column":14,"nodeType":"246","messageId":"247","endLine":132,"endColumn":17,"suggestions":"440"},{"ruleId":"244","severity":2,"message":"245","line":133,"column":14,"nodeType":"246","messageId":"247","endLine":133,"endColumn":17,"suggestions":"441"},{"ruleId":"429","severity":2,"message":"442","line":134,"column":9,"nodeType":"431","messageId":"432","endLine":134,"endColumn":19,"fix":"443"},{"ruleId":"429","severity":2,"message":"444","line":193,"column":13,"nodeType":"431","messageId":"432","endLine":193,"endColumn":18,"fix":"445"},{"ruleId":"244","severity":2,"message":"245","line":214,"column":55,"nodeType":"246","messageId":"247","endLine":214,"endColumn":58,"suggestions":"446"},{"ruleId":"244","severity":2,"message":"245","line":26,"column":41,"nodeType":"246","messageId":"247","endLine":26,"endColumn":44,"suggestions":"447"},{"ruleId":"244","severity":2,"message":"245","line":13,"column":34,"nodeType":"246","messageId":"247","endLine":13,"endColumn":37,"suggestions":"448"},{"ruleId":"244","severity":2,"message":"245","line":13,"column":19,"nodeType":"246","messageId":"247","endLine":13,"endColumn":22,"suggestions":"449"},{"ruleId":"244","severity":2,"message":"245","line":10,"column":18,"nodeType":"246","messageId":"247","endLine":10,"endColumn":21,"suggestions":"450"},{"ruleId":"244","severity":2,"message":"245","line":11,"column":20,"nodeType":"246","messageId":"247","endLine":11,"endColumn":23,"suggestions":"451"},{"ruleId":"244","severity":2,"message":"245","line":12,"column":19,"nodeType":"246","messageId":"247","endLine":12,"endColumn":22,"suggestions":"452"},{"ruleId":"244","severity":2,"message":"245","line":13,"column":21,"nodeType":"246","messageId":"247","endLine":13,"endColumn":24,"suggestions":"453"},{"ruleId":"244","severity":2,"message":"245","line":14,"column":20,"nodeType":"246","messageId":"247","endLine":14,"endColumn":23,"suggestions":"454"},{"ruleId":"244","severity":2,"message":"245","line":15,"column":29,"nodeType":"246","messageId":"247","endLine":15,"endColumn":32,"suggestions":"455"},{"ruleId":"244","severity":2,"message":"245","line":16,"column":23,"nodeType":"246","messageId":"247","endLine":16,"endColumn":26,"suggestions":"456"},{"ruleId":"244","severity":2,"message":"245","line":22,"column":33,"nodeType":"246","messageId":"247","endLine":22,"endColumn":36,"suggestions":"457"},{"ruleId":"244","severity":2,"message":"245","line":30,"column":33,"nodeType":"246","messageId":"247","endLine":30,"endColumn":36,"suggestions":"458"},{"ruleId":"459","severity":2,"message":"460","line":35,"column":7,"nodeType":null,"messageId":"461","endLine":35,"endColumn":13},{"ruleId":"459","severity":2,"message":"462","line":35,"column":23,"nodeType":null,"messageId":"461","endLine":35,"endColumn":30},{"ruleId":"463","severity":2,"message":"464","line":36,"column":16,"nodeType":"431","messageId":"465","endLine":36,"endColumn":25},{"ruleId":"459","severity":2,"message":"460","line":38,"column":9,"nodeType":null,"messageId":"461","endLine":38,"endColumn":15},{"ruleId":"459","severity":2,"message":"462","line":38,"column":25,"nodeType":null,"messageId":"461","endLine":38,"endColumn":32},{"ruleId":"463","severity":2,"message":"464","line":39,"column":18,"nodeType":"431","messageId":"465","endLine":39,"endColumn":27},{"ruleId":"459","severity":2,"message":"460","line":41,"column":8,"nodeType":null,"messageId":"461","endLine":41,"endColumn":14},{"ruleId":"459","severity":2,"message":"462","line":41,"column":24,"nodeType":null,"messageId":"461","endLine":41,"endColumn":31},{"ruleId":"463","severity":2,"message":"464","line":42,"column":17,"nodeType":"431","messageId":"465","endLine":42,"endColumn":26},{"ruleId":"459","severity":2,"message":"460","line":44,"column":10,"nodeType":null,"messageId":"461","endLine":44,"endColumn":16},{"ruleId":"459","severity":2,"message":"462","line":44,"column":26,"nodeType":null,"messageId":"461","endLine":44,"endColumn":33},{"ruleId":"463","severity":2,"message":"464","line":45,"column":19,"nodeType":"431","messageId":"465","endLine":45,"endColumn":28},{"ruleId":"459","severity":2,"message":"460","line":47,"column":9,"nodeType":null,"messageId":"461","endLine":47,"endColumn":15},{"ruleId":"459","severity":2,"message":"462","line":47,"column":25,"nodeType":null,"messageId":"461","endLine":47,"endColumn":32},{"ruleId":"463","severity":2,"message":"464","line":48,"column":18,"nodeType":"431","messageId":"465","endLine":48,"endColumn":27},{"ruleId":"459","severity":2,"message":"460","line":50,"column":18,"nodeType":null,"messageId":"461","endLine":50,"endColumn":24},{"ruleId":"459","severity":2,"message":"462","line":50,"column":34,"nodeType":null,"messageId":"461","endLine":50,"endColumn":41},{"ruleId":"463","severity":2,"message":"464","line":51,"column":27,"nodeType":"431","messageId":"465","endLine":51,"endColumn":36},{"ruleId":"459","severity":2,"message":"460","line":53,"column":12,"nodeType":null,"messageId":"461","endLine":53,"endColumn":18},{"ruleId":"459","severity":2,"message":"462","line":53,"column":28,"nodeType":null,"messageId":"461","endLine":53,"endColumn":35},{"ruleId":"463","severity":2,"message":"464","line":54,"column":21,"nodeType":"431","messageId":"465","endLine":54,"endColumn":30},"@typescript-eslint/no-explicit-any","Unexpected any. Specify a different type.","TSAnyKeyword","unexpectedAny",["466","467"],["468","469"],["470","471"],"vue/singleline-html-element-content-newline","Expected 1 line break after opening tag (`<h3>`), but no line breaks found.","HTMLTagClose","unexpectedAfterClosingBracket",{"range":"472","text":"473"},"Expected 1 line break before closing tag (`</h3>`), but no line breaks found.","HTMLEndTagOpen","unexpectedBeforeOpeningBracket",{"range":"474","text":"473"},"Expected 1 line break after opening tag (`<h4>`), but no line breaks found.",{"range":"475","text":"473"},"Expected 1 line break before closing tag (`</h4>`), but no line breaks found.",{"range":"476","text":"473"},"vue/max-attributes-per-line","'title' should be on a new line.","VAttribute","shouldBeOnNewLine",{"range":"477","text":"473"},"Expected 1 line break after opening tag (`<button>`), but no line breaks found.",{"range":"478","text":"473"},"vue/html-self-closing","Require self-closing on HTML elements (<i>).","VElement","requireSelfClosing",{"range":"479","text":"480"},"Expected 1 line break before closing tag (`</button>`), but no line breaks found.",{"range":"481","text":"473"},{"range":"482","text":"473"},{"range":"483","text":"473"},{"range":"484","text":"480"},{"range":"485","text":"473"},"vue/html-indent","Expected indentation of 2 spaces but found 4 spaces.",{"range":"486","text":"487"},{"range":"488","text":"487"},"Expected indentation of 4 spaces but found 6 spaces.",{"range":"489","text":"490"},"Expected indentation of 6 spaces but found 8 spaces.",{"range":"491","text":"492"},"'class' should be on a new line.",{"range":"493","text":"473"},{"range":"494","text":"473"},{"range":"495","text":"480"},{"range":"496","text":"473"},{"range":"497","text":"490"},{"range":"498","text":"490"},{"range":"499","text":"492"},"Expected 1 line break after opening tag (`<h1>`), but no line breaks found.",{"range":"500","text":"473"},"Expected 1 line break before closing tag (`</h1>`), but no line breaks found.",{"range":"501","text":"473"},{"range":"502","text":"492"},"Expected 1 line break after opening tag (`<h2>`), but no line breaks found.",{"range":"503","text":"473"},"Expected 1 line break before closing tag (`</h2>`), but no line breaks found.",{"range":"504","text":"473"},{"range":"505","text":"490"},{"range":"506","text":"487"},{"range":"507","text":"487"},{"range":"508","text":"487"},{"range":"509","text":"487"},{"range":"510","text":"490"},"vue/html-closing-bracket-spacing","Expected no space before '>', but found.","VStartTag","unexpected",{"range":"511","text":"512"},{"range":"513","text":"492"},"vue/first-attribute-linebreak","Expected a linebreak before this attribute.","expected",{"range":"514","text":"473"},"Expected indentation of 11 spaces but found 8 spaces.",{"range":"515","text":"516"},{"range":"517","text":"492"},"Expected indentation of 8 spaces but found 10 spaces.",{"range":"518","text":"519"},"Expected 1 line break after opening tag (`<p>`), but no line breaks found.",{"range":"520","text":"473"},{"range":"521","text":"480"},"Expected 1 line break before closing tag (`</p>`), but no line breaks found.",{"range":"522","text":"473"},{"range":"523","text":"519"},{"range":"524","text":"473"},{"range":"525","text":"473"},{"range":"526","text":"492"},{"range":"527","text":"490"},{"range":"528","text":"490"},{"range":"529","text":"492"},{"range":"530","text":"473"},{"range":"531","text":"516"},{"range":"532","text":"492"},{"range":"533","text":"519"},{"range":"534","text":"473"},{"range":"535","text":"480"},{"range":"536","text":"473"},{"range":"537","text":"519"},{"range":"538","text":"473"},{"range":"539","text":"473"},{"range":"540","text":"492"},{"range":"541","text":"490"},{"range":"542","text":"490"},{"range":"543","text":"492"},{"range":"544","text":"473"},{"range":"545","text":"516"},{"range":"546","text":"492"},{"range":"547","text":"519"},{"range":"548","text":"473"},{"range":"549","text":"480"},{"range":"550","text":"473"},{"range":"551","text":"519"},{"range":"552","text":"473"},{"range":"553","text":"473"},{"range":"554","text":"492"},{"range":"555","text":"490"},{"range":"556","text":"490"},{"range":"557","text":"492"},{"range":"558","text":"473"},{"range":"559","text":"516"},{"range":"560","text":"492"},{"range":"561","text":"519"},{"range":"562","text":"473"},{"range":"563","text":"480"},{"range":"564","text":"473"},{"range":"565","text":"519"},{"range":"566","text":"473"},{"range":"567","text":"473"},{"range":"568","text":"492"},{"range":"569","text":"490"},{"range":"570","text":"490"},{"range":"571","text":"492"},{"range":"572","text":"473"},{"range":"573","text":"516"},{"range":"574","text":"492"},{"range":"575","text":"519"},{"range":"576","text":"473"},{"range":"577","text":"480"},{"range":"578","text":"473"},{"range":"579","text":"519"},{"range":"580","text":"473"},{"range":"581","text":"473"},{"range":"582","text":"492"},{"range":"583","text":"490"},{"range":"584","text":"487"},{"range":"585","text":"487"},{"range":"586","text":"487"},{"range":"587","text":"490"},{"range":"588","text":"487"},"vue/multi-word-component-names","Component name \"Login\" should always be multi-word.","vue/return-in-computed-property","Expected to return a value in computed function.","ArrowFunctionExpression","expectedReturnInFunction","'@click' should be on a new line.",{"range":"589","text":"473"},"vue/attributes-order","Attribute \"v-if\" should go before \"@click\".","expectedOrder",{"range":"590","text":"591"},"'v-if' should be on a new line.","Attribute \"v-if\" should go before \"class\".",{"range":"592","text":"593"},{"range":"594","text":"473"},"Disallow self-closing on HTML void elements (<img/>).","disallowSelfClosing",{"range":"595","text":"596"},"':alt' should be on a new line.",{"range":"597","text":"473"},"'height' should be on a new line.","Expected a space before '/>', but not found.","missing",{"range":"598","text":"599"},{"range":"600","text":"473"},{"range":"601","text":"480"},{"range":"602","text":"512"},["603","604"],["605","606"],"prefer-const","'footer' is never reassigned. Use 'const' instead.","Identifier","useConst",{"range":"607","text":"608"},"'color' is never reassigned. Use 'const' instead.",{"range":"609","text":"608"},"'timer' is never reassigned. Use 'const' instead.",{"range":"610","text":"608"},"'classesToAdd' is never reassigned. Use 'const' instead.",{"range":"611","text":"608"},["612","613"],["614","615"],"'inputClass' is never reassigned. Use 'const' instead.",{"range":"616","text":"617"},"'input' is never reassigned. Use 'const' instead.",{"range":"618","text":"619"},["620","621"],["622","623"],["624","625"],["626","627"],["628","629"],["630","631"],["632","633"],["634","635"],["636","637"],["638","639"],["640","641"],["642","643"],["644","645"],"@typescript-eslint/no-unused-vars","'string' is defined but never used.","unusedVar","'content' is defined but never used.","prefer-rest-params","Use the rest parameters instead of 'arguments'.","preferRestParams",{"messageId":"646","fix":"647","desc":"648"},{"messageId":"649","fix":"650","desc":"651"},{"messageId":"646","fix":"652","desc":"648"},{"messageId":"649","fix":"653","desc":"651"},{"messageId":"646","fix":"654","desc":"648"},{"messageId":"649","fix":"655","desc":"651"},[1205,1205],"\n",[1220,1220],[1264,1264],[1286,1286],[1396,1397],[1419,1419],[1452,1457],"/>",[1457,1457],[1503,1504],[1521,1521],[1548,1553],[1553,1553],[392,396],"  ",[422,426],[477,483],"    ",[519,527],"      ",[562,563],[585,585],[633,638],[638,638],[648,654],[668,674],[693,701],[731,731],[740,740],[746,754],[786,786],[802,802],[808,814],[821,825],[832,836],[854,858],[885,889],[908,914],[948,949],"",[951,959],[963,964],[1023,1031],"           ",[1080,1088],[1090,1100],"        ",[1119,1119],[1142,1147],[1147,1147],[1152,1162],[1181,1181],[1190,1190],[1195,1203],[1210,1216],[1230,1236],[1272,1280],[1284,1285],[1344,1352],[1410,1418],[1420,1430],[1449,1449],[1485,1490],[1490,1490],[1495,1505],[1524,1524],[1537,1537],[1542,1550],[1557,1563],[1577,1583],[1619,1627],[1631,1632],[1691,1699],[1749,1757],[1759,1769],[1788,1788],[1818,1823],[1823,1823],[1828,1838],[1857,1857],[1862,1862],[1867,1875],[1882,1888],[1902,1908],[1947,1955],[1959,1960],[2019,2027],[2084,2092],[2094,2104],[2123,2123],[2147,2152],[2152,2152],[2157,2167],[2186,2186],[2194,2194],[2199,2207],[2214,2220],[2234,2240],[2275,2283],[2287,2288],[2347,2355],[2403,2411],[2413,2423],[2442,2442],[2474,2479],[2479,2479],[2484,2494],[2513,2513],[2516,2516],[2521,2529],[2536,2542],[2556,2560],[2567,2571],[2589,2593],[2636,2642],[2652,2656],[705,706],[706,747],"v-if=\"!authStore.identity\" @click=\"login\"",[803,906],"v-if=\"authStore.account?.picture || authStore.identity?.picture\" class=\"d-flex justify-content-between\"",[841,842],[1102,1104],">",[1023,1024],[1102,1102]," ",[1229,1230],[1306,1311],[1305,1306],{"messageId":"646","fix":"656","desc":"648"},{"messageId":"649","fix":"657","desc":"651"},{"messageId":"646","fix":"658","desc":"648"},{"messageId":"649","fix":"659","desc":"651"},[1578,1653],"const { footer = '', color = '', timer = 5000, classesToAdd = [] } = options;",[1578,1653],[1578,1653],[1578,1653],{"messageId":"646","fix":"660","desc":"648"},{"messageId":"649","fix":"661","desc":"651"},{"messageId":"646","fix":"662","desc":"648"},{"messageId":"649","fix":"663","desc":"651"},[4355,4625],"const inputClass =\n      type == 'checkbox'\n        ? 'form-check-input'\n        : type == 'radio'\n        ? 'form-check-input'\n        : type == 'range'\n        ? 'form-range'\n        : type == 'color'\n        ? 'form-control form-control-color'\n        : 'form-control';",[6778,6862],"const input = (document.getElementById('pop-prompt-input') as HTMLInputElement).value;",{"messageId":"646","fix":"664","desc":"648"},{"messageId":"649","fix":"665","desc":"651"},{"messageId":"646","fix":"666","desc":"648"},{"messageId":"649","fix":"667","desc":"651"},{"messageId":"646","fix":"668","desc":"648"},{"messageId":"649","fix":"669","desc":"651"},{"messageId":"646","fix":"670","desc":"648"},{"messageId":"649","fix":"671","desc":"651"},{"messageId":"646","fix":"672","desc":"648"},{"messageId":"649","fix":"673","desc":"651"},{"messageId":"646","fix":"674","desc":"648"},{"messageId":"649","fix":"675","desc":"651"},{"messageId":"646","fix":"676","desc":"648"},{"messageId":"649","fix":"677","desc":"651"},{"messageId":"646","fix":"678","desc":"648"},{"messageId":"649","fix":"679","desc":"651"},{"messageId":"646","fix":"680","desc":"648"},{"messageId":"649","fix":"681","desc":"651"},{"messageId":"646","fix":"682","desc":"648"},{"messageId":"649","fix":"683","desc":"651"},{"messageId":"646","fix":"684","desc":"648"},{"messageId":"649","fix":"685","desc":"651"},{"messageId":"646","fix":"686","desc":"648"},{"messageId":"649","fix":"687","desc":"651"},{"messageId":"646","fix":"688","desc":"648"},{"messageId":"649","fix":"689","desc":"651"},"suggestUnknown",{"range":"690","text":"691"},"Use `unknown` instead, this will force you to explicitly, and safely assert the type is correct.","suggestNever",{"range":"692","text":"693"},"Use `never` instead, this is useful when instantiating generic type parameters that you don't need to know the type of.",{"range":"694","text":"691"},{"range":"695","text":"693"},{"range":"696","text":"691"},{"range":"697","text":"693"},{"range":"698","text":"691"},{"range":"699","text":"693"},{"range":"700","text":"691"},{"range":"701","text":"693"},{"range":"702","text":"691"},{"range":"703","text":"693"},{"range":"704","text":"691"},{"range":"705","text":"693"},{"range":"706","text":"691"},{"range":"707","text":"693"},{"range":"708","text":"691"},{"range":"709","text":"693"},{"range":"710","text":"691"},{"range":"711","text":"693"},{"range":"712","text":"691"},{"range":"713","text":"693"},{"range":"714","text":"691"},{"range":"715","text":"693"},{"range":"716","text":"691"},{"range":"717","text":"693"},{"range":"718","text":"691"},{"range":"719","text":"693"},{"range":"720","text":"691"},{"range":"721","text":"693"},{"range":"722","text":"691"},{"range":"723","text":"693"},{"range":"724","text":"691"},{"range":"725","text":"693"},{"range":"726","text":"691"},{"range":"727","text":"693"},{"range":"728","text":"691"},{"range":"729","text":"693"},{"range":"730","text":"691"},{"range":"731","text":"693"},[91,94],"unknown",[91,94],"never",[54,57],[54,57],[236,239],[236,239],[1033,1036],[1033,1036],[1539,1542],[1539,1542],[4322,4325],[4322,4325],[4344,4347],[4344,4347],[7453,7456],[7453,7456],[768,771],[768,771],[339,342],[339,342],[382,385],[382,385],[270,273],[270,273],[304,307],[304,307],[337,340],[337,340],[372,375],[372,375],[406,409],[406,409],[449,452],[449,452],[486,489],[486,489],[602,605],[602,605],[809,812],[809,812]]
+[
+  {
+    "/Users/anthonyrossman/Source/Projects/fs-template/client/src/main.ts": "1",
+    "/Users/anthonyrossman/Source/Projects/fs-template/client/src/App.vue": "2",
+    "/Users/anthonyrossman/Source/Projects/fs-template/client/src/router.ts": "3",
+    "/Users/anthonyrossman/Source/Projects/fs-template/client/src/utils/registerGlobalComponents.ts": "4",
+    "/Users/anthonyrossman/Source/Projects/fs-template/client/src/components/ExampleStuff/NavTopBar.vue": "5",
+    "/Users/anthonyrossman/Source/Projects/fs-template/client/src/components/ExampleStuff/NavSideBar.vue": "6",
+    "/Users/anthonyrossman/Source/Projects/fs-template/client/src/utils/Pop.ts": "7",
+    "/Users/anthonyrossman/Source/Projects/fs-template/client/src/Stores/AuthStore.ts": "8",
+    "/Users/anthonyrossman/Source/Projects/fs-template/client/src/services/AuthService.ts": "9",
+    "/Users/anthonyrossman/Source/Projects/fs-template/client/src/services/AxiosService.ts": "10",
+    "/Users/anthonyrossman/Source/Projects/fs-template/client/src/services/AccountService.ts": "11",
+    "/Users/anthonyrossman/Source/Projects/fs-template/client/src/utils/Logger.ts": "12",
+    "/Users/anthonyrossman/Source/Projects/fs-template/client/src/models/Account.ts": "13",
+    "/Users/anthonyrossman/Source/Projects/fs-template/client/src/components/LoginButton.vue": "14",
+    "/Users/anthonyrossman/Source/Projects/fs-template/client/src/stores/AuthStore.ts": "15"
+  },
+  {
+    "size": 520,
+    "mtime": 1767761816454,
+    "results": "16",
+    "hashOfConfig": "17"
+  },
+  {
+    "size": 977,
+    "mtime": 1767763607877,
+    "results": "18",
+    "hashOfConfig": "17"
+  },
+  {
+    "size": 777,
+    "mtime": 1767765794302,
+    "results": "19",
+    "hashOfConfig": "17"
+  },
+  {
+    "size": 576,
+    "mtime": 1767765892024,
+    "results": "20",
+    "hashOfConfig": "17"
+  },
+  {
+    "size": 1885,
+    "mtime": 1767766310320,
+    "results": "21",
+    "hashOfConfig": "17"
+  },
+  {
+    "size": 3729,
+    "mtime": 1767766754704,
+    "results": "22",
+    "hashOfConfig": "17"
+  },
+  {
+    "size": 8242,
+    "mtime": 1767801806649,
+    "results": "23",
+    "hashOfConfig": "17"
+  },
+  {
+    "size": 303,
+    "mtime": 1767801411407,
+    "results": "24",
+    "hashOfConfig": "17"
+  },
+  {
+    "size": 1312,
+    "mtime": 1767801227188,
+    "results": "25",
+    "hashOfConfig": "17"
+  },
+  {
+    "size": 704,
+    "mtime": 1767801301640,
+    "results": "26",
+    "hashOfConfig": "17"
+  },
+  {
+    "size": 521,
+    "mtime": 1767767472467,
+    "results": "27",
+    "hashOfConfig": "17"
+  },
+  {
+    "size": 1409,
+    "mtime": 1767767619460,
+    "results": "28",
+    "hashOfConfig": "17"
+  },
+  {
+    "size": 313,
+    "mtime": 1767767316556,
+    "results": "29",
+    "hashOfConfig": "17"
+  },
+  {
+    "size": 1930,
+    "mtime": 1767767301426,
+    "results": "30",
+    "hashOfConfig": "17"
+  },
+  {
+    "size": 303,
+    "mtime": 1767801411407,
+    "results": "31",
+    "hashOfConfig": "17"
+  },
+  {
+    "filePath": "32",
+    "messages": "33",
+    "suppressedMessages": "34",
+    "errorCount": 0,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0
+  },
+  "xm7iuh",
+  {
+    "filePath": "35",
+    "messages": "36",
+    "suppressedMessages": "37",
+    "errorCount": 0,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0
+  },
+  {
+    "filePath": "38",
+    "messages": "39",
+    "suppressedMessages": "40",
+    "errorCount": 0,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0
+  },
+  {
+    "filePath": "41",
+    "messages": "42",
+    "suppressedMessages": "43",
+    "errorCount": 0,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0
+  },
+  {
+    "filePath": "44",
+    "messages": "45",
+    "suppressedMessages": "46",
+    "errorCount": 0,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0
+  },
+  {
+    "filePath": "47",
+    "messages": "48",
+    "suppressedMessages": "49",
+    "errorCount": 0,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0
+  },
+  {
+    "filePath": "50",
+    "messages": "51",
+    "suppressedMessages": "52",
+    "errorCount": 11,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 6,
+    "fixableWarningCount": 0,
+    "source": null
+  },
+  {
+    "filePath": "53",
+    "messages": "54",
+    "suppressedMessages": "55",
+    "errorCount": 0,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0
+  },
+  {
+    "filePath": "56",
+    "messages": "57",
+    "suppressedMessages": "58",
+    "errorCount": 0,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0
+  },
+  {
+    "filePath": "59",
+    "messages": "60",
+    "suppressedMessages": "61",
+    "errorCount": 1,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "source": null
+  },
+  {
+    "filePath": "62",
+    "messages": "63",
+    "suppressedMessages": "64",
+    "errorCount": 1,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "source": null
+  },
+  {
+    "filePath": "65",
+    "messages": "66",
+    "suppressedMessages": "67",
+    "errorCount": 30,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "source": null
+  },
+  {
+    "filePath": "68",
+    "messages": "69",
+    "suppressedMessages": "70",
+    "errorCount": 0,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0
+  },
+  {
+    "filePath": "71",
+    "messages": "72",
+    "suppressedMessages": "73",
+    "errorCount": 0,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0
+  },
+  {
+    "filePath": "74",
+    "messages": "75",
+    "suppressedMessages": "76",
+    "errorCount": 0,
+    "fatalErrorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0
+  },
+  "/Users/anthonyrossman/Source/Projects/fs-template/client/src/main.ts",
+  [],
+  [],
+  "/Users/anthonyrossman/Source/Projects/fs-template/client/src/App.vue",
+  [],
+  [],
+  "/Users/anthonyrossman/Source/Projects/fs-template/client/src/router.ts",
+  [],
+  [],
+  "/Users/anthonyrossman/Source/Projects/fs-template/client/src/utils/registerGlobalComponents.ts",
+  [],
+  [],
+  "/Users/anthonyrossman/Source/Projects/fs-template/client/src/components/ExampleStuff/NavTopBar.vue",
+  [],
+  [],
+  "/Users/anthonyrossman/Source/Projects/fs-template/client/src/components/ExampleStuff/NavSideBar.vue",
+  [],
+  [],
+  "/Users/anthonyrossman/Source/Projects/fs-template/client/src/utils/Pop.ts",
+  [
+    "77",
+    "78",
+    "79",
+    "80",
+    "81",
+    "82",
+    "83",
+    "84",
+    "85",
+    "86",
+    "87"
+  ],
+  [],
+  "/Users/anthonyrossman/Source/Projects/fs-template/client/src/Stores/AuthStore.ts",
+  [],
+  [],
+  "/Users/anthonyrossman/Source/Projects/fs-template/client/src/services/AuthService.ts",
+  [],
+  [],
+  "/Users/anthonyrossman/Source/Projects/fs-template/client/src/services/AxiosService.ts",
+  [
+    "88"
+  ],
+  [],
+  "/Users/anthonyrossman/Source/Projects/fs-template/client/src/services/AccountService.ts",
+  [
+    "89"
+  ],
+  [],
+  "/Users/anthonyrossman/Source/Projects/fs-template/client/src/utils/Logger.ts",
+  [
+    "90",
+    "91",
+    "92",
+    "93",
+    "94",
+    "95",
+    "96",
+    "97",
+    "98",
+    "99",
+    "100",
+    "101",
+    "102",
+    "103",
+    "104",
+    "105",
+    "106",
+    "107",
+    "108",
+    "109",
+    "110",
+    "111",
+    "112",
+    "113",
+    "114",
+    "115",
+    "116",
+    "117",
+    "118",
+    "119"
+  ],
+  [],
+  "/Users/anthonyrossman/Source/Projects/fs-template/client/src/models/Account.ts",
+  [],
+  [],
+  "/Users/anthonyrossman/Source/Projects/fs-template/client/src/components/LoginButton.vue",
+  [],
+  [],
+  "/Users/anthonyrossman/Source/Projects/fs-template/client/src/stores/AuthStore.ts",
+  [],
+  [],
+  {
+    "ruleId": "120",
+    "severity": 2,
+    "message": "121",
+    "line": 34,
+    "column": 23,
+    "nodeType": "122",
+    "messageId": "123",
+    "endLine": 34,
+    "endColumn": 26,
+    "suggestions": "124"
+  },
+  {
+    "ruleId": "120",
+    "severity": 2,
+    "message": "121",
+    "line": 52,
+    "column": 14,
+    "nodeType": "122",
+    "messageId": "123",
+    "endLine": 52,
+    "endColumn": 17,
+    "suggestions": "125"
+  },
+  {
+    "ruleId": "126",
+    "severity": 2,
+    "message": "127",
+    "line": 54,
+    "column": 11,
+    "nodeType": "128",
+    "messageId": "129",
+    "endLine": 54,
+    "endColumn": 17,
+    "fix": "130"
+  },
+  {
+    "ruleId": "126",
+    "severity": 2,
+    "message": "131",
+    "line": 54,
+    "column": 24,
+    "nodeType": "128",
+    "messageId": "129",
+    "endLine": 54,
+    "endColumn": 29,
+    "fix": "132"
+  },
+  {
+    "ruleId": "126",
+    "severity": 2,
+    "message": "133",
+    "line": 54,
+    "column": 36,
+    "nodeType": "128",
+    "messageId": "129",
+    "endLine": 54,
+    "endColumn": 41,
+    "fix": "134"
+  },
+  {
+    "ruleId": "126",
+    "severity": 2,
+    "message": "135",
+    "line": 54,
+    "column": 50,
+    "nodeType": "128",
+    "messageId": "129",
+    "endLine": 54,
+    "endColumn": 62,
+    "fix": "136"
+  },
+  {
+    "ruleId": "120",
+    "severity": 2,
+    "message": "121",
+    "line": 132,
+    "column": 14,
+    "nodeType": "122",
+    "messageId": "123",
+    "endLine": 132,
+    "endColumn": 17,
+    "suggestions": "137"
+  },
+  {
+    "ruleId": "120",
+    "severity": 2,
+    "message": "121",
+    "line": 133,
+    "column": 14,
+    "nodeType": "122",
+    "messageId": "123",
+    "endLine": 133,
+    "endColumn": 17,
+    "suggestions": "138"
+  },
+  {
+    "ruleId": "126",
+    "severity": 2,
+    "message": "139",
+    "line": 134,
+    "column": 9,
+    "nodeType": "128",
+    "messageId": "129",
+    "endLine": 134,
+    "endColumn": 19,
+    "fix": "140"
+  },
+  {
+    "ruleId": "126",
+    "severity": 2,
+    "message": "141",
+    "line": 193,
+    "column": 13,
+    "nodeType": "128",
+    "messageId": "129",
+    "endLine": 193,
+    "endColumn": 18,
+    "fix": "142"
+  },
+  {
+    "ruleId": "120",
+    "severity": 2,
+    "message": "121",
+    "line": 214,
+    "column": 55,
+    "nodeType": "122",
+    "messageId": "123",
+    "endLine": 214,
+    "endColumn": 58,
+    "suggestions": "143"
+  },
+  {
+    "ruleId": "120",
+    "severity": 2,
+    "message": "121",
+    "line": 13,
+    "column": 34,
+    "nodeType": "122",
+    "messageId": "123",
+    "endLine": 13,
+    "endColumn": 37,
+    "suggestions": "144"
+  },
+  {
+    "ruleId": "120",
+    "severity": 2,
+    "message": "121",
+    "line": 13,
+    "column": 19,
+    "nodeType": "122",
+    "messageId": "123",
+    "endLine": 13,
+    "endColumn": 22,
+    "suggestions": "145"
+  },
+  {
+    "ruleId": "120",
+    "severity": 2,
+    "message": "121",
+    "line": 10,
+    "column": 18,
+    "nodeType": "122",
+    "messageId": "123",
+    "endLine": 10,
+    "endColumn": 21,
+    "suggestions": "146"
+  },
+  {
+    "ruleId": "120",
+    "severity": 2,
+    "message": "121",
+    "line": 11,
+    "column": 20,
+    "nodeType": "122",
+    "messageId": "123",
+    "endLine": 11,
+    "endColumn": 23,
+    "suggestions": "147"
+  },
+  {
+    "ruleId": "120",
+    "severity": 2,
+    "message": "121",
+    "line": 12,
+    "column": 19,
+    "nodeType": "122",
+    "messageId": "123",
+    "endLine": 12,
+    "endColumn": 22,
+    "suggestions": "148"
+  },
+  {
+    "ruleId": "120",
+    "severity": 2,
+    "message": "121",
+    "line": 13,
+    "column": 21,
+    "nodeType": "122",
+    "messageId": "123",
+    "endLine": 13,
+    "endColumn": 24,
+    "suggestions": "149"
+  },
+  {
+    "ruleId": "120",
+    "severity": 2,
+    "message": "121",
+    "line": 14,
+    "column": 20,
+    "nodeType": "122",
+    "messageId": "123",
+    "endLine": 14,
+    "endColumn": 23,
+    "suggestions": "150"
+  },
+  {
+    "ruleId": "120",
+    "severity": 2,
+    "message": "121",
+    "line": 15,
+    "column": 29,
+    "nodeType": "122",
+    "messageId": "123",
+    "endLine": 15,
+    "endColumn": 32,
+    "suggestions": "151"
+  },
+  {
+    "ruleId": "120",
+    "severity": 2,
+    "message": "121",
+    "line": 16,
+    "column": 23,
+    "nodeType": "122",
+    "messageId": "123",
+    "endLine": 16,
+    "endColumn": 26,
+    "suggestions": "152"
+  },
+  {
+    "ruleId": "120",
+    "severity": 2,
+    "message": "121",
+    "line": 22,
+    "column": 33,
+    "nodeType": "122",
+    "messageId": "123",
+    "endLine": 22,
+    "endColumn": 36,
+    "suggestions": "153"
+  },
+  {
+    "ruleId": "120",
+    "severity": 2,
+    "message": "121",
+    "line": 30,
+    "column": 33,
+    "nodeType": "122",
+    "messageId": "123",
+    "endLine": 30,
+    "endColumn": 36,
+    "suggestions": "154"
+  },
+  {
+    "ruleId": "155",
+    "severity": 2,
+    "message": "156",
+    "line": 35,
+    "column": 7,
+    "nodeType": null,
+    "messageId": "157",
+    "endLine": 35,
+    "endColumn": 13
+  },
+  {
+    "ruleId": "155",
+    "severity": 2,
+    "message": "158",
+    "line": 35,
+    "column": 23,
+    "nodeType": null,
+    "messageId": "157",
+    "endLine": 35,
+    "endColumn": 30
+  },
+  {
+    "ruleId": "159",
+    "severity": 2,
+    "message": "160",
+    "line": 36,
+    "column": 16,
+    "nodeType": "128",
+    "messageId": "161",
+    "endLine": 36,
+    "endColumn": 25
+  },
+  {
+    "ruleId": "155",
+    "severity": 2,
+    "message": "156",
+    "line": 38,
+    "column": 9,
+    "nodeType": null,
+    "messageId": "157",
+    "endLine": 38,
+    "endColumn": 15
+  },
+  {
+    "ruleId": "155",
+    "severity": 2,
+    "message": "158",
+    "line": 38,
+    "column": 25,
+    "nodeType": null,
+    "messageId": "157",
+    "endLine": 38,
+    "endColumn": 32
+  },
+  {
+    "ruleId": "159",
+    "severity": 2,
+    "message": "160",
+    "line": 39,
+    "column": 18,
+    "nodeType": "128",
+    "messageId": "161",
+    "endLine": 39,
+    "endColumn": 27
+  },
+  {
+    "ruleId": "155",
+    "severity": 2,
+    "message": "156",
+    "line": 41,
+    "column": 8,
+    "nodeType": null,
+    "messageId": "157",
+    "endLine": 41,
+    "endColumn": 14
+  },
+  {
+    "ruleId": "155",
+    "severity": 2,
+    "message": "158",
+    "line": 41,
+    "column": 24,
+    "nodeType": null,
+    "messageId": "157",
+    "endLine": 41,
+    "endColumn": 31
+  },
+  {
+    "ruleId": "159",
+    "severity": 2,
+    "message": "160",
+    "line": 42,
+    "column": 17,
+    "nodeType": "128",
+    "messageId": "161",
+    "endLine": 42,
+    "endColumn": 26
+  },
+  {
+    "ruleId": "155",
+    "severity": 2,
+    "message": "156",
+    "line": 44,
+    "column": 10,
+    "nodeType": null,
+    "messageId": "157",
+    "endLine": 44,
+    "endColumn": 16
+  },
+  {
+    "ruleId": "155",
+    "severity": 2,
+    "message": "158",
+    "line": 44,
+    "column": 26,
+    "nodeType": null,
+    "messageId": "157",
+    "endLine": 44,
+    "endColumn": 33
+  },
+  {
+    "ruleId": "159",
+    "severity": 2,
+    "message": "160",
+    "line": 45,
+    "column": 19,
+    "nodeType": "128",
+    "messageId": "161",
+    "endLine": 45,
+    "endColumn": 28
+  },
+  {
+    "ruleId": "155",
+    "severity": 2,
+    "message": "156",
+    "line": 47,
+    "column": 9,
+    "nodeType": null,
+    "messageId": "157",
+    "endLine": 47,
+    "endColumn": 15
+  },
+  {
+    "ruleId": "155",
+    "severity": 2,
+    "message": "158",
+    "line": 47,
+    "column": 25,
+    "nodeType": null,
+    "messageId": "157",
+    "endLine": 47,
+    "endColumn": 32
+  },
+  {
+    "ruleId": "159",
+    "severity": 2,
+    "message": "160",
+    "line": 48,
+    "column": 18,
+    "nodeType": "128",
+    "messageId": "161",
+    "endLine": 48,
+    "endColumn": 27
+  },
+  {
+    "ruleId": "155",
+    "severity": 2,
+    "message": "156",
+    "line": 50,
+    "column": 18,
+    "nodeType": null,
+    "messageId": "157",
+    "endLine": 50,
+    "endColumn": 24
+  },
+  {
+    "ruleId": "155",
+    "severity": 2,
+    "message": "158",
+    "line": 50,
+    "column": 34,
+    "nodeType": null,
+    "messageId": "157",
+    "endLine": 50,
+    "endColumn": 41
+  },
+  {
+    "ruleId": "159",
+    "severity": 2,
+    "message": "160",
+    "line": 51,
+    "column": 27,
+    "nodeType": "128",
+    "messageId": "161",
+    "endLine": 51,
+    "endColumn": 36
+  },
+  {
+    "ruleId": "155",
+    "severity": 2,
+    "message": "156",
+    "line": 53,
+    "column": 12,
+    "nodeType": null,
+    "messageId": "157",
+    "endLine": 53,
+    "endColumn": 18
+  },
+  {
+    "ruleId": "155",
+    "severity": 2,
+    "message": "158",
+    "line": 53,
+    "column": 28,
+    "nodeType": null,
+    "messageId": "157",
+    "endLine": 53,
+    "endColumn": 35
+  },
+  {
+    "ruleId": "159",
+    "severity": 2,
+    "message": "160",
+    "line": 54,
+    "column": 21,
+    "nodeType": "128",
+    "messageId": "161",
+    "endLine": 54,
+    "endColumn": 30
+  },
+  "@typescript-eslint/no-explicit-any",
+  "Unexpected any. Specify a different type.",
+  "TSAnyKeyword",
+  "unexpectedAny",
+  [
+    "162",
+    "163"
+  ],
+  [
+    "164",
+    "165"
+  ],
+  "prefer-const",
+  "'footer' is never reassigned. Use 'const' instead.",
+  "Identifier",
+  "useConst",
+  {
+    "range": "166",
+    "text": "167"
+  },
+  "'color' is never reassigned. Use 'const' instead.",
+  {
+    "range": "168",
+    "text": "167"
+  },
+  "'timer' is never reassigned. Use 'const' instead.",
+  {
+    "range": "169",
+    "text": "167"
+  },
+  "'classesToAdd' is never reassigned. Use 'const' instead.",
+  {
+    "range": "170",
+    "text": "167"
+  },
+  [
+    "171",
+    "172"
+  ],
+  [
+    "173",
+    "174"
+  ],
+  "'inputClass' is never reassigned. Use 'const' instead.",
+  {
+    "range": "175",
+    "text": "176"
+  },
+  "'input' is never reassigned. Use 'const' instead.",
+  {
+    "range": "177",
+    "text": "178"
+  },
+  [
+    "179",
+    "180"
+  ],
+  [
+    "181",
+    "182"
+  ],
+  [
+    "183",
+    "184"
+  ],
+  [
+    "185",
+    "186"
+  ],
+  [
+    "187",
+    "188"
+  ],
+  [
+    "189",
+    "190"
+  ],
+  [
+    "191",
+    "192"
+  ],
+  [
+    "193",
+    "194"
+  ],
+  [
+    "195",
+    "196"
+  ],
+  [
+    "197",
+    "198"
+  ],
+  [
+    "199",
+    "200"
+  ],
+  [
+    "201",
+    "202"
+  ],
+  "@typescript-eslint/no-unused-vars",
+  "'string' is defined but never used.",
+  "unusedVar",
+  "'content' is defined but never used.",
+  "prefer-rest-params",
+  "Use the rest parameters instead of 'arguments'.",
+  "preferRestParams",
+  {
+    "messageId": "203",
+    "fix": "204",
+    "desc": "205"
+  },
+  {
+    "messageId": "206",
+    "fix": "207",
+    "desc": "208"
+  },
+  {
+    "messageId": "203",
+    "fix": "209",
+    "desc": "205"
+  },
+  {
+    "messageId": "206",
+    "fix": "210",
+    "desc": "208"
+  },
+  [
+    1578,
+    1653
+  ],
+  "const { footer = '', color = '', timer = 5000, classesToAdd = [] } = options;",
+  [
+    1578,
+    1653
+  ],
+  [
+    1578,
+    1653
+  ],
+  [
+    1578,
+    1653
+  ],
+  {
+    "messageId": "203",
+    "fix": "211",
+    "desc": "205"
+  },
+  {
+    "messageId": "206",
+    "fix": "212",
+    "desc": "208"
+  },
+  {
+    "messageId": "203",
+    "fix": "213",
+    "desc": "205"
+  },
+  {
+    "messageId": "206",
+    "fix": "214",
+    "desc": "208"
+  },
+  [
+    4355,
+    4625
+  ],
+  "const inputClass =\n      type == 'checkbox'\n        ? 'form-check-input'\n        : type == 'radio'\n        ? 'form-check-input'\n        : type == 'range'\n        ? 'form-range'\n        : type == 'color'\n        ? 'form-control form-control-color'\n        : 'form-control';",
+  [
+    6778,
+    6862
+  ],
+  "const input = (document.getElementById('pop-prompt-input') as HTMLInputElement).value;",
+  {
+    "messageId": "203",
+    "fix": "215",
+    "desc": "205"
+  },
+  {
+    "messageId": "206",
+    "fix": "216",
+    "desc": "208"
+  },
+  {
+    "messageId": "203",
+    "fix": "217",
+    "desc": "205"
+  },
+  {
+    "messageId": "206",
+    "fix": "218",
+    "desc": "208"
+  },
+  {
+    "messageId": "203",
+    "fix": "219",
+    "desc": "205"
+  },
+  {
+    "messageId": "206",
+    "fix": "220",
+    "desc": "208"
+  },
+  {
+    "messageId": "203",
+    "fix": "221",
+    "desc": "205"
+  },
+  {
+    "messageId": "206",
+    "fix": "222",
+    "desc": "208"
+  },
+  {
+    "messageId": "203",
+    "fix": "223",
+    "desc": "205"
+  },
+  {
+    "messageId": "206",
+    "fix": "224",
+    "desc": "208"
+  },
+  {
+    "messageId": "203",
+    "fix": "225",
+    "desc": "205"
+  },
+  {
+    "messageId": "206",
+    "fix": "226",
+    "desc": "208"
+  },
+  {
+    "messageId": "203",
+    "fix": "227",
+    "desc": "205"
+  },
+  {
+    "messageId": "206",
+    "fix": "228",
+    "desc": "208"
+  },
+  {
+    "messageId": "203",
+    "fix": "229",
+    "desc": "205"
+  },
+  {
+    "messageId": "206",
+    "fix": "230",
+    "desc": "208"
+  },
+  {
+    "messageId": "203",
+    "fix": "231",
+    "desc": "205"
+  },
+  {
+    "messageId": "206",
+    "fix": "232",
+    "desc": "208"
+  },
+  {
+    "messageId": "203",
+    "fix": "233",
+    "desc": "205"
+  },
+  {
+    "messageId": "206",
+    "fix": "234",
+    "desc": "208"
+  },
+  {
+    "messageId": "203",
+    "fix": "235",
+    "desc": "205"
+  },
+  {
+    "messageId": "206",
+    "fix": "236",
+    "desc": "208"
+  },
+  {
+    "messageId": "203",
+    "fix": "237",
+    "desc": "205"
+  },
+  {
+    "messageId": "206",
+    "fix": "238",
+    "desc": "208"
+  },
+  "suggestUnknown",
+  {
+    "range": "239",
+    "text": "240"
+  },
+  "Use `unknown` instead, this will force you to explicitly, and safely assert the type is correct.",
+  "suggestNever",
+  {
+    "range": "241",
+    "text": "242"
+  },
+  "Use `never` instead, this is useful when instantiating generic type parameters that you don't need to know the type of.",
+  {
+    "range": "243",
+    "text": "240"
+  },
+  {
+    "range": "244",
+    "text": "242"
+  },
+  {
+    "range": "245",
+    "text": "240"
+  },
+  {
+    "range": "246",
+    "text": "242"
+  },
+  {
+    "range": "247",
+    "text": "240"
+  },
+  {
+    "range": "248",
+    "text": "242"
+  },
+  {
+    "range": "249",
+    "text": "240"
+  },
+  {
+    "range": "250",
+    "text": "242"
+  },
+  {
+    "range": "251",
+    "text": "240"
+  },
+  {
+    "range": "252",
+    "text": "242"
+  },
+  {
+    "range": "253",
+    "text": "240"
+  },
+  {
+    "range": "254",
+    "text": "242"
+  },
+  {
+    "range": "255",
+    "text": "240"
+  },
+  {
+    "range": "256",
+    "text": "242"
+  },
+  {
+    "range": "257",
+    "text": "240"
+  },
+  {
+    "range": "258",
+    "text": "242"
+  },
+  {
+    "range": "259",
+    "text": "240"
+  },
+  {
+    "range": "260",
+    "text": "242"
+  },
+  {
+    "range": "261",
+    "text": "240"
+  },
+  {
+    "range": "262",
+    "text": "242"
+  },
+  {
+    "range": "263",
+    "text": "240"
+  },
+  {
+    "range": "264",
+    "text": "242"
+  },
+  {
+    "range": "265",
+    "text": "240"
+  },
+  {
+    "range": "266",
+    "text": "242"
+  },
+  {
+    "range": "267",
+    "text": "240"
+  },
+  {
+    "range": "268",
+    "text": "242"
+  },
+  {
+    "range": "269",
+    "text": "240"
+  },
+  {
+    "range": "270",
+    "text": "242"
+  },
+  {
+    "range": "271",
+    "text": "240"
+  },
+  {
+    "range": "272",
+    "text": "242"
+  },
+  [
+    1033,
+    1036
+  ],
+  "unknown",
+  [
+    1033,
+    1036
+  ],
+  "never",
+  [
+    1539,
+    1542
+  ],
+  [
+    1539,
+    1542
+  ],
+  [
+    4322,
+    4325
+  ],
+  [
+    4322,
+    4325
+  ],
+  [
+    4344,
+    4347
+  ],
+  [
+    4344,
+    4347
+  ],
+  [
+    7453,
+    7456
+  ],
+  [
+    7453,
+    7456
+  ],
+  [
+    339,
+    342
+  ],
+  [
+    339,
+    342
+  ],
+  [
+    382,
+    385
+  ],
+  [
+    382,
+    385
+  ],
+  [
+    270,
+    273
+  ],
+  [
+    270,
+    273
+  ],
+  [
+    304,
+    307
+  ],
+  [
+    304,
+    307
+  ],
+  [
+    337,
+    340
+  ],
+  [
+    337,
+    340
+  ],
+  [
+    372,
+    375
+  ],
+  [
+    372,
+    375
+  ],
+  [
+    406,
+    409
+  ],
+  [
+    406,
+    409
+  ],
+  [
+    449,
+    452
+  ],
+  [
+    449,
+    452
+  ],
+  [
+    486,
+    489
+  ],
+  [
+    486,
+    489
+  ],
+  [
+    602,
+    605
+  ],
+  [
+    602,
+    605
+  ],
+  [
+    809,
+    812
+  ],
+  [
+    809,
+    812
+  ]
+]

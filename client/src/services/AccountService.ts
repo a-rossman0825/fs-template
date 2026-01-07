@@ -4,18 +4,15 @@ import { Account } from "@/models/Account";
 import { useAuthStore } from "@/stores/AuthStore";
 
 class AccountService {
-
   async getAccount() {
     const authStore = useAuthStore();
     try {
-      const res = await api.get('/account');
+      const res = await api.get("/account");
       authStore.account = new Account(res.data);
-    } catch (err: any) {
-      logger.error('HAVE YOU STARTED YOUR SERVER YET???', err);
+    } catch (err: unknown) {
+      logger.error("HAVE YOU STARTED YOUR SERVER YET???", err);
     }
   }
-
-  
 }
 
 export const accountService = new AccountService();
