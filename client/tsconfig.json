@@ -9,6 +9,7 @@
     },
     "types": [
       "vite/client",
+      "node",
       "./@types/vue-eslint-config-typescript"
   ],
   "lib": ["es2015", "dom"]
